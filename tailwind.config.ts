@@ -21,15 +21,21 @@ const config: Config = {
     themes: {
       light: {
         colors: {
-          primary: {
-            100: '#9192AB',
-            300: '#6C6D8F',
-            500: '#474973',
-            700: '#323351',
-            900: '#24253A',
-            DEFAULT: '#474973'
+          default: {    //Black
+            DEFAULT: '#000'
           },
-          secondary: {
+          foreground: {   //White
+            DEFAULT: '#FFF'
+          },
+          background: {     //Light Beige
+            100: '#F6E9DC',
+            300: '#F4E1D0',
+            500: '#F1DAC4',
+            700: '#C1AE9D',
+            900: '#918376',
+            DEFAULT: '#F1DAC4'
+          },
+          primary: {    //Orange Creamsicle
             100: '#FFB8A3',
             300: '#FFA184',
             500: '#FF8965',
@@ -37,14 +43,14 @@ const config: Config = {
             900: '#99523D',
             DEFAULT: '#FF8965'
           },
-          background: {
-            100: '#F6E9DC',
-            300: '#F4E1D0',
-            500: '#F1DAC4',
-            700: '#C1AE9D',
-            900: '#918376',
-            DEFAULT: '#F1DAC4'
-          }
+          secondary: {    //Dark Blue
+            100: '#9192AB',
+            300: '#6C6D8F',
+            500: '#474973',
+            700: '#323351',
+            900: '#24253A',
+            DEFAULT: '#474973'
+          },
         }
       }
     }
