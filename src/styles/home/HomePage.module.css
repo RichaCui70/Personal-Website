@@ -1,0 +1,24 @@
+.title {
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.list {
+    list-style: disc;
+    padding: 0px 48px;
+}

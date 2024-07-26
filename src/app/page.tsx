@@ -1,20 +1,21 @@
 import Image from "next/image";
-import MyNavBar from "@/componentsNavBar";
+import MyNavBar from "@/components/home/NavBar";
+import HomePage from "@/components/home/HomePage";
 
 export default function Home() {
   return (
     <>
       <MyNavBar />
-      <div style={{ width: "900px" }}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 864 752" width="100%">
-          <path fillRule="evenodd" clipRule="evenodd" d="M492.764 0H0V530H0.0119555C0.956065 635.543 57.8811 706.502 187.347 677.826C236.41 759.292 496.689 813.036 564.624 621.168C739.318 631.431 816.751 415.531 807.579 327.47C920.66 188.034 847.33 97.4305 732 47.6228V0H492.764Z" fill="url(#cottage)" />
-          <defs>
-            <pattern id="cottage" patternUnits="userSpaceOnUse" width="864" height="752" x="0" y="0">
-              <image href="Cottage.jpg" x="0" y="0" width="864" />
-            </pattern>
-          </defs>
-        </svg>
-      </div>
+      <HomePage />
     </>
   );
 }
+
+// <svg width="863" height="671" viewBox="0 0 863 671" fill="none" xmlns="http://www.w3.org/2000/svg">
+//   <rect width="863" height="671" fill="url(#pattern0_130_338)" />
+//   <defs>
+//     <pattern id="pattern0_130_338" patternContentUnits="objectBoundingBox" width="1" height="1" fill="green">
+//       <use transform="matrix(0.00109649 0 0 0.00141024 0 -0.104994)" />
+//     </pattern>
+//   </defs>
+// </svg>
