@@ -1,7 +1,8 @@
 import styles from "@/styles/home/HomePage.module.css"
 
 import Image from "next/image";
-import BackgroundBlurb from "./BackgroundBlurb";
+import BackgroundBlurb from "@/components/home/BackgroundBlurb";
+import Title from "@/components/home/Title";
 
 
 export default function HomePage() {
@@ -16,7 +17,7 @@ export default function HomePage() {
 function HomePageContents() {
     return (
         <article className="px-16 flex flex-col place-content-center gap-16 text-default">
-            <h2 className={styles.title}>Hello, I'm a Nature Enthusiast</h2>
+            <Title />
             <div className={styles.bio}>
                 <p>I'm...</p>
                 <ul className={styles.list}>
