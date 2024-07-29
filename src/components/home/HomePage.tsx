@@ -1,5 +1,6 @@
 import styles from "@/styles/home/HomePage.module.css"
 
+import Image from "next/image";
 import BackgroundBlurb from "./BackgroundBlurb";
 
 
@@ -26,6 +27,10 @@ function HomePageContents() {
                     <li>Someone who always listens to music 🎧</li>
                     <li>Plat 2 in League 😞</li>
                 </ul>
+                <div className={styles.iconLayout}>
+                    <Image src="/LinkedIn.svg" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
+                    <Image src="/Github.svg" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
+                </div>
             </div>
         </article>
     )

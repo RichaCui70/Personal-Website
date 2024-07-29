@@ -22,3 +22,10 @@
     list-style: disc;
     padding: 0px 48px;
 }
+
+.iconLayout {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+}
