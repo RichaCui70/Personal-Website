@@ -8,7 +8,7 @@ import Title from "@/components/home/Title";
 
 export default function HomePage() {
     return (
-        <section className="grid grid-cols-2 bg-background">
+        <section className="grid grid-cols-2">
             <BackgroundBlurb width="100%" />
             <HomePageContents />
         </section>
@@ -31,10 +31,10 @@ function HomePageContents() {
                 </ul>
                 <div className={styles.iconLayout}>
                     <Link href="https://www.linkedin.com/in/richardcui70/" target="_blank">
-                        <Image src="/LinkedIn.png" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
+                        <Image src="/icons/LinkedIn.png" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
                     </Link>
                     <Link href="https://github.com/RichaCui70/" target="_blank">
-                        <Image src="/Github.png" width="32" height="32" alt="Github Icon - Link to Richard Cui's Github" />
+                        <Image src="/icons/Github.png" width="32" height="32" alt="Github Icon - Link to Richard Cui's Github" />
                     </Link>
                 </div>
             </div>
