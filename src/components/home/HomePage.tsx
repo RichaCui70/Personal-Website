@@ -31,10 +31,10 @@ function HomePageContents() {
                 </ul>
                 <div className={styles.iconLayout}>
                     <Link href="https://www.linkedin.com/in/richardcui70/" target="_blank">
-                        <Image src="/LinkedIn.svg" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
+                        <Image src="/LinkedIn.png" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
                     </Link>
                     <Link href="https://github.com/RichaCui70/" target="_blank">
-                        <Image src="/Github.svg" width="32" height="32" alt="Github Icon - Link to Richard Cui's Github" />
+                        <Image src="/Github.png" width="32" height="32" alt="Github Icon - Link to Richard Cui's Github" />
                     </Link>
                 </div>
             </div>
