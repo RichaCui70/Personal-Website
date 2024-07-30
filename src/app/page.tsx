@@ -1,12 +1,17 @@
 import Image from "next/image";
 import MyNavBar from "@/components/NavBar";
 import HomePage from "@/components/home/HomePage";
+import TransitionBlurb from "@/components/TransitionBlurb";
 
 export default function Home() {
   return (
     <>
       <MyNavBar />
       <HomePage />
+      <TransitionBlurb width={12} height={12} />
+      {/* <div style={{width: "100vw", height: "500px"}}>
+        <Image src="/blurbs/Rectangle.svg" alt="Rectangle" height={520} width={1900} />
+      </div> */}
     </>
   );
 }
