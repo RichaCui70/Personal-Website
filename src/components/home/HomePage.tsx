@@ -1,6 +1,7 @@
 import styles from "@/styles/home/HomePage.module.css"
 
 import Image from "next/image";
+import Link from "next/link"
 import BackgroundBlurb from "@/components/home/BackgroundBlurb";
 import Title from "@/components/home/Title";
 
@@ -29,8 +30,12 @@ function HomePageContents() {
                     <li>Plat 2 in League 😞</li>
                 </ul>
                 <div className={styles.iconLayout}>
-                    <Image src="/LinkedIn.svg" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
-                    <Image src="/Github.svg" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
+                    <Link href="https://www.linkedin.com/in/richardcui70/" target="_blank">
+                        <Image src="/LinkedIn.svg" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
+                    </Link>
+                    <Link href="https://github.com/RichaCui70/" target="_blank">
+                        <Image src="/Github.svg" width="32" height="32" alt="Github Icon - Link to Richard Cui's Github" />
+                    </Link>
                 </div>
             </div>
         </article>
