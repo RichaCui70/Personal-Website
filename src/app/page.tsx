@@ -8,10 +8,7 @@ export default function Home() {
     <>
       <MyNavBar />
       <HomePage />
-      <TransitionBlurb width={12} height={12} />
-      {/* <div style={{width: "100vw", height: "500px"}}>
-        <Image src="/blurbs/Rectangle.svg" alt="Rectangle" height={520} width={1900} />
-      </div> */}
+      <TransitionBlurb title="Project" subtitle="POV: I try and create a quirky projects layout" />
     </>
   );
 }

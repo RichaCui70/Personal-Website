@@ -1,3 +1,8 @@
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     text-align: center;
     text-wrap: wrap;
