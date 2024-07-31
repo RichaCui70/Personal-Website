@@ -1,22 +1,30 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useCallback } from 'react'
 
 import Typed from 'typed.js';
 
 import styles from '@/styles/home/HomePage.module.css'
 
-type typeDirection = "right" | "left"
+import { getTitles, getPhotos } from '@/lib/mediaDefinitions'; 
 
 
-export default function Title(){
+export default function Title({changePhoto}: {changePhoto: (photoLocation: string) => void}){
+    const photos = getPhotos()
+
+    const changePhotoWrapper = useCallback((arrayPos: number) => {
+        changePhoto(photos[arrayPos])
+    }, [changePhoto, photos])
+
     useEffect(() => {
         const typed = new Typed("#toBeTyped", {
-            strings: ["Richard Cui", "a Nature Enthusiast", "a League of Legends Addict", "a Poor Rockclimber", "an Adventure Seeker", "an Avid Runner", "a Sports Lover"],
+            strings: getTitles(),
             typeSpeed: 50,
             startDelay: 1000,
             backSpeed: 50,
             backDelay: 1000,
+            preStringTyped: changePhotoWrapper,
+            smartBackspace: false,
             loop: true
         })
 
@@ -26,8 +34,10 @@ export default function Title(){
     }, [])
 
     return (
-        <h2 className={styles.title}>
-            Hello, I'm <br/><span id="toBeTyped"/>
-        </h2>
+        <>
+            <h2 className={styles.title}>
+                Hello, I'm<br/><span id="toBeTyped"/>
+            </h2>
+        </>
     )
 }

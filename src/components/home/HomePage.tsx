@@ -1,24 +1,38 @@
+'use client'
+
+import { useState } from "react";
+
+import Typed from "typed.js";
+
 import styles from "@/styles/home/HomePage.module.css"
 
 import Image from "next/image";
 import Link from "next/link"
+
 import BackgroundBlurb from "@/components/home/BackgroundBlurb";
 import Title from "@/components/home/Title";
+import { getPhotos } from "@/lib/mediaDefinitions";
 
 
 export default function HomePage() {
+    const [photo, setPhoto] = useState('profile.jpg')
+
+    const changePhoto = (photoLocation: string) => {
+        setPhoto(photoLocation)
+    }
+
     return (
         <section className="grid grid-cols-2">
-            <BackgroundBlurb width="100%" />
-            <HomePageContents />
+            <BackgroundBlurb width="100%" photo={photo} />
+            <HomePageContents changePhoto={changePhoto}/>
         </section>
     )
 }
 
-function HomePageContents() {
+function HomePageContents({changePhoto}: {changePhoto: (photoLocation: string) => void}) {
     return (
         <article className="px-16 flex flex-col place-content-center gap-16 text-default">
-            <Title />
+            <Title changePhoto={changePhoto} />
             <div className={styles.bio}>
                 <p>I'm...</p>
                 <ul className={styles.list}>
@@ -31,13 +45,17 @@ function HomePageContents() {
                 </ul>
                 <div className={styles.iconLayout}>
                     <Link href="https://www.linkedin.com/in/richardcui70/" target="_blank">
-                        <Image src="/icons/LinkedIn.png" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
+                        <Image src="/icons/linkedin.png" width="32" height="32" alt="LinkedIn Icon - Link to Richard Cui's LinkedIn" />
                     </Link>
                     <Link href="https://github.com/RichaCui70/" target="_blank">
-                        <Image src="/icons/Github.png" width="32" height="32" alt="Github Icon - Link to Richard Cui's Github" />
+                        <Image src="/icons/github.png" width="32" height="32" alt="Github Icon - Link to Richard Cui's Github" />
                     </Link>
                 </div>
             </div>
         </article>
     )
+}
+
+function changePhoto() {
+
 }
