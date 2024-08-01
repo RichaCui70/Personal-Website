@@ -27,7 +27,7 @@ export const TITLES = [
     },
     {
         photo: '/photos/residenceAssistant.jpg',
-        title: "Who be counting JCole out?"
+        title: "a Residence Assistant"
     },
 ]
 
