@@ -1,6 +1,7 @@
 .titleBlock {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .title {
@@ -11,6 +12,15 @@
     font-weight: 500;
     line-height: normal;
     text-decoration-line: underline;
+}
+
+.subTitle{
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .bio {

@@ -20,7 +20,7 @@ export default function Title({changePhoto}: {changePhoto: (photoLocation: strin
         const typed = new Typed("#toBeTyped", {
             strings: getTitles(),
             typeSpeed: 50,
-            startDelay: 1000,
+            startDelay: 0,
             backSpeed: 50,
             backDelay: 1000,
             preStringTyped: changePhotoWrapper,
@@ -34,10 +34,11 @@ export default function Title({changePhoto}: {changePhoto: (photoLocation: strin
     }, [])
 
     return (
-        <>
-            <h2 className={styles.title}>
-                Hello, I'm<br/><span id="toBeTyped"/>
-            </h2>
-        </>
+        <div>
+            <h2 className={styles.title}>Hello, I'm</h2>
+            <div className={styles.subTitle}>
+                <span id="toBeTyped">&nbsp;</span>
+            </div>
+        </div>
     )
 }
