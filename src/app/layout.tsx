@@ -20,6 +20,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="icon" href="/favicon.ico?12345123" sizes="any" />
       </head>
       <body className={montserrat.className}>
         <Providers>
