@@ -1,81 +1,81 @@
 .titleBlock {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
-    text-align: center;
-    text-wrap: wrap;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
+  text-align: center;
+  text-wrap: wrap;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
-.subTitle{
-    text-align: center;
-    text-wrap: wrap;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.subTitle {
+  text-align: center;
+  text-wrap: wrap;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .bio {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .list {
-    list-style: disc;
-    padding: 0px 48px;
+  list-style: disc;
+  padding: 0px 48px;
 }
 
 .iconLayout {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .backgroundBlurbFade {
-    width: 100%;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+  width: 100%;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 
 .backgroundBlurbFade.backgroundBlurbFadeIn {
-    animation-duration: 1s;
-    animation-name: fadein
+  animation-duration: 1s;
+  animation-name: fadein;
 }
-@keyframes fadein{
-    0%{
-        opacity: 0
-    }
-    100%{
-        opacity: 1;
-    }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .backgroundBlurbFade.backgroundBlurbFadeOut {
-    animation-duration: 1.75s;
-    animation-name: fadeout
+  animation-duration: 1.75s;
+  animation-name: fadeout;
 }
-@keyframes fadeout{
-    0%{
-        opacity: 1
-    }
-    90%{
-        opacity: 1
-    }
-    100%{
-        opacity: 0;
-    }
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
