@@ -44,3 +44,19 @@
     gap: 3rem;
     justify-content: center;
 }
+
+.backgroundBlurbFade{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: fadein
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -27,7 +27,7 @@ export default function Title({changePhoto, changeFade}: {changePhoto: (photoLoc
             typeSpeed: 50,
             startDelay: 0,
             backSpeed: 50,
-            backDelay: 5000,
+            backDelay: 1000,
             preStringTyped: changePhotoWrapper,
             onStringTyped: changeFadeType,
             smartBackspace: false,

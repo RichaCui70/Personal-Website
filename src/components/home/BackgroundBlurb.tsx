@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react"
 
+import styles from "@/styles/home/HomePage.module.css"
 import { fadeType } from "@/lib/constants"
 
 export default function Blurb({ width, photo, fade }: { width: string, photo: string, fade: fadeType }) {
     const [fadeType, setFadeType] = useState("in" as fadeType)
+    const [backspaced, setBackspaced] = useState(false)
 
     useEffect(() => {
         setFadeType(fade)
-    })
+    }, [fade])
 
     return (
-        <div style={{ width }}>
+        <div style={{ width }} className={fadeType === "in" ? styles.backgroundBlurbFade : "nut"}>
             <svg
                 width={width}
                 // height="650"
@@ -29,7 +31,7 @@ export default function Blurb({ width, photo, fade }: { width: string, photo: st
                         id="path1"
                         fill="url(#imagePattern)"
                     >
-                        {fadeType === "in" ? <animate id="in" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1s" repeatCount={1} /> : <animate id="out" attributeType="CSS" attributeName="opacity" from="1" to="0" dur="6s" repeatCount={1} />}
+                        {/* {fadeType === "in" ? <animate id="in" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1s" repeatCount={1} /> : <animate id="out" attributeType="CSS" attributeName="opacity" from="1" to="0" dur="6s" repeatCount={1} />} */}
                     </path>
                 </g>
             </svg>
