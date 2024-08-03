@@ -5,16 +5,21 @@ import { useEffect, useCallback } from 'react'
 import Typed from 'typed.js';
 
 import styles from '@/styles/home/HomePage.module.css'
-
 import { getTitles, getPhotos } from '@/lib/mediaDefinitions'; 
+import { fadeType } from '@/lib/constants';
 
 
-export default function Title({changePhoto}: {changePhoto: (photoLocation: string) => void}){
+export default function Title({changePhoto, changeFade}: {changePhoto: (photoLocation: string) => void, changeFade: (fadeType: fadeType) => void}){
     const photos = getPhotos()
 
     const changePhotoWrapper = useCallback((arrayPos: number) => {
         changePhoto(photos[arrayPos])
-    }, [changePhoto, photos])
+        changeFade("in")
+    }, [photos])
+
+    const changeFadeType = useCallback(() => {
+        changeFade("out")
+    }, [])
 
     useEffect(() => {
         const typed = new Typed("#toBeTyped", {
@@ -24,6 +29,7 @@ export default function Title({changePhoto}: {changePhoto: (photoLocation: strin
             backSpeed: 50,
             backDelay: 1000,
             preStringTyped: changePhotoWrapper,
+            onStringTyped: changeFadeType,
             smartBackspace: false,
             loop: true
         })
