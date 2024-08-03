@@ -8,7 +8,10 @@ export default function Home() {
     <>
       <MyNavBar />
       <HomePage />
-      <TransitionBlurb title="Project" subtitle="POV: I try and create a quirky projects layout" />
+      <TransitionBlurb
+        title="Project"
+        subtitle="POV: I try and create a quirky projects layout"
+      />
     </>
   );
 }
