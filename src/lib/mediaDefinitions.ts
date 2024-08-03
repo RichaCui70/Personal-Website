@@ -7,7 +7,7 @@ export const TITLES = [
     },
     {
         photo: '/photos/adventure.jpg',
-        title: "an adventure seeker"
+        title: "a thrill seeker"
     },
     {
         photo: '/photos/wingsforlife.jpg',
@@ -31,7 +31,7 @@ export const TITLES = [
     },
     {
         photo: '/photos/mapleleafs.jpg',
-        title: "a Maple Leafs loyalist"
+        title: "a Leafs loyalist"
     },
 ]
 

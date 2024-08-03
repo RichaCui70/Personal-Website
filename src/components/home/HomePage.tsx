@@ -25,7 +25,7 @@ export default function HomePage() {
 
     return (
         <section className="grid grid-cols-2">
-            <BackgroundBlurb width="100%" photo={photo} fade={fade}/>
+            <BackgroundBlurb photo={photo} fade={fade}/>
             <HomePageContents changePhoto={changePhoto} changeFade={changeFade}/>
         </section>
     )

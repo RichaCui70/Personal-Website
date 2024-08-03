@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import styles from "@/styles/home/HomePage.module.css"
 import { fadeType } from "@/lib/constants"
 
-export default function Blurb({ width, photo, fade }: { width: string, photo: string, fade: fadeType }) {
+export default function Blurb({ photo, fade }: { photo: string, fade: fadeType }) {
     const [fadeType, setFadeType] = useState("in" as fadeType)
     const [backspaced, setBackspaced] = useState(false)
 
@@ -12,9 +12,9 @@ export default function Blurb({ width, photo, fade }: { width: string, photo: st
     }, [fade])
 
     return (
-        <div style={{ width }} className={fadeType === "in" ? styles.backgroundBlurbFade : "nut"}>
+        <div className={`${styles.backgroundBlurbFade} ${fadeType === "in" ? styles.backgroundBlurbFadeIn : styles.backgroundBlurbFadeOut}`}>
             <svg
-                width={width}
+                width="100%"
                 // height="650"
                 viewBox="0 0 224.89583 171.97917"
                 version="1.1"
