@@ -6,28 +6,32 @@ export const TITLES = [
         title: 'Richard Cui'
     },
     {
+        photo: '/photos/adventure.jpg',
+        title: "an adventure seeker"
+    },
+    {
+        photo: '/photos/wingsforlife.jpg',
+        title: "a wannabe runner"
+    },
+    {
+        photo: '/photos/f1.jpg',
+        title: "a big F1 fan"
+    },
+    {
+        photo: '/photos/hockey.jpg',
+        title: "a goalie"
+    },
+    {
         photo: '/photos/vancouver.jpg',
-        title: "a League of Legends Addict"
-    },
-    {
-        photo: '/photos/campCanoe.jpg',
-        title: "a Poor Rockclimber"
-    },
-    {
-        photo: '/photos/cottage.jpg',
-        title: "an Adventure Seeker"
-    },
-    {
-        photo: '/photos/campWimbledon.jpg',
-        title: "an Avid Runner"
-    },
-    {
-        photo: '/photos/hockey.png',
-        title: "a Sports Lover"
+        title: "a film camera fanatic"
     },
     {
         photo: '/photos/residenceAssistant.jpg',
         title: "a Residence Assistant"
+    },
+    {
+        photo: '/photos/mapleleafs.jpg',
+        title: "a Maple Leafs loyalist"
     },
 ]
 
