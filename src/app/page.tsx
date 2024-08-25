@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MyNavBar from "@/components/NavBar";
+import MyNavBar from "@/components/navbar/NavBar";
 import HomePage from "@/components/home/HomePage";
 import TransitionBlurb from "@/components/TransitionBlurb";
 
@@ -12,6 +12,7 @@ export default function Home() {
         title="Project"
         subtitle="POV: I try and create a quirky projects layout"
       />
+      
     </>
   );
 }

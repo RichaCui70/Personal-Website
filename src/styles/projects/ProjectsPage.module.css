@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding: 48px 64px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: columm;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 16px;
+    height: 243px;
+    width: 405px;
+    border-radius: 24.5px;
+    border: 4px #FF8965;
+}
