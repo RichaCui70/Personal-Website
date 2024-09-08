@@ -1,0 +1,32 @@
+.landingPageHeader{
+    height: 388px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    background-position: center;
+}
+
+.blogLandingPageTitle{
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.blogLandingPageContent{
+    margin: 64px 64px 0px 64px;
+}
+
+.contentHeader{
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}

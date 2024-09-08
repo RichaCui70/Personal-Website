@@ -6,9 +6,11 @@ import {
   Link,
 } from "@nextui-org/react";
 
+import { pageType } from "@/lib/constants";
+
 import styles from "@/styles/navbar/NavBar.module.css"
 
-export default function MyNavBar() {
+export default function MyNavBar({page}: {page: pageType}) {
   return (
     <Navbar
       position="sticky"
@@ -20,16 +22,34 @@ export default function MyNavBar() {
         <p className={`${styles.navbarTitle} ${styles.navbar}`}>Richard Cui</p>
       </NavbarBrand>
       <NavbarContent justify="end" className={`${styles.navbarItems} ${styles.navbar}`}>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            About me
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Projects
-          </Link>
-        </NavbarItem>
+        { (page === "home") && (
+          <>
+            <NavbarItem>
+              <Link color="foreground" href="#">
+                About me
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="#">
+                Projects
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="/blog">
+                Blog
+              </Link>
+            </NavbarItem>
+          </>
+        )}
+        { (page === "blog") && (
+          <>
+            <NavbarItem>
+              <Link color="foreground" href="/">
+                Home
+              </Link>
+            </NavbarItem>
+          </>
+        )}
       </NavbarContent>
     </Navbar>
   );
