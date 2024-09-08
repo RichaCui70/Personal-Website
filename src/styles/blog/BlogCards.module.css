@@ -1,13 +1,51 @@
-.cardContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    width: 100%;
-    max-width: 399px;
-    height: 477px;
-
+.featuredCardContainer{
+    display: inline-block;
     border-radius: 24.5px;
     border: 4px solid #FF8965;
 }
+
+.recentCardContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cardTitleContainer{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cardTitle{
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cardSubTitle{
+    color: #000;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.cardDescription{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cardReadMore{
+    color: #FF8965;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cardDivider{
+    width: 100%;
+    border-color: #FF8965;
+}
+

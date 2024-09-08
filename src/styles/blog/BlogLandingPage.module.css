@@ -20,13 +20,31 @@
 }
 
 .blogLandingPageContent{
+    display: flex;
+    flex-direction: column;
     margin: 64px 64px 0px 64px;
+    gap: 48px;
 }
 
 .contentHeader{
     display: inline-block;
     color: #000;
-    text-align: center;
+    text-align: left;
     font-size: 48px;
     font-weight: 600;
+}
+
+.featuredContent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recentContent{
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
 }
