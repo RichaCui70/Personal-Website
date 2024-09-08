@@ -4,8 +4,9 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
+
+import styles from "@/styles/navbar/NavBar.module.css"
 
 export default function MyNavBar() {
   return (
@@ -16,9 +17,9 @@ export default function MyNavBar() {
       classNames={{ wrapper: "p-0" }}
     >
       <NavbarBrand>
-        <p className="navbar navbar-title">Richard Cui</p>
+        <p className={`${styles.navbarTitle} ${styles.navbar}`}>Richard Cui</p>
       </NavbarBrand>
-      <NavbarContent justify="end" className="navbar navbar-items">
+      <NavbarContent justify="end" className={`${styles.navbarItems} ${styles.navbar}`}>
         <NavbarItem>
           <Link color="foreground" href="#">
             About me

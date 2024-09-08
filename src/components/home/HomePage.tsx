@@ -75,5 +75,3 @@ function HomePageContents({
     </article>
   );
 }
-
-function changePhoto() {}

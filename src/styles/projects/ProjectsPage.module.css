@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    padding: 48px 64px;
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: column;
+
+    height: 243px;
+    width: 100%;
+    max-width: 400px;
+
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 16px;
+    border-radius: 24.5px;
+    border-width: 4px;
+    border-color: #FF8965;
+}
+
+.projectTitle{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.projectSubTitle{
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
