@@ -1,18 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "@/styles/blog/BlogCards.module.css";
 
 export default function FeaturedBlogs({
+  id,
   title,
   subtitle,
   photo,
   alt,
 }: {
+  id: string;
   title: string;
   subtitle: string;
   photo: string;
   alt: string;
 }) {
+
   return (
     <div className={styles.featuredCardContainer}>
       <Image
@@ -28,7 +32,9 @@ export default function FeaturedBlogs({
           <h6 className={styles.cardSubTitle}>{subtitle}</h6>
         </div>
         <hr className={styles.cardDivider}></hr>
-        <h3 className={styles.cardReadMore}>Read More</h3>
+        <Link href={`/blog/${id}`}>
+          <h3 className={styles.cardReadMore}>Read More</h3>
+        </Link>
       </div>
     </div>
   );

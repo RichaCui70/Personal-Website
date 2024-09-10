@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "@/styles/blog/BlogCards.module.css";
 
 export default function RecentBlogs({
+  id,
   title,
   subtitle,
   description,
@@ -10,6 +12,7 @@ export default function RecentBlogs({
   alt,
   photoPlacement,
 }: {
+  id: string;
   title: string;
   subtitle: string;
   description: string;
@@ -31,7 +34,9 @@ export default function RecentBlogs({
           <h6 className={styles.cardSubTitle}>{subtitle}</h6>
         </div>
         <p className={styles.cardDescription}>{description}</p>
-        <h3 className={styles.cardReadMore}>Read More</h3>
+        <Link href={`/blog/${id}`}>
+          <h3 className={styles.cardReadMore}>Read More</h3>
+        </Link>
       </div>
       {photoPlacement === "right" && (
         <Image src={photo} alt={alt} width={632} height={356} />
