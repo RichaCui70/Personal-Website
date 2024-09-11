@@ -1,0 +1,45 @@
+.dividerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px 0px 48px;
+}
+
+.chevronContainer{
+    height: 24px;
+    width: 24px;
+}
+
+.divider{
+    width: 70vw;
+    border-color: #FF8965;
+}
+
+.blogMetaDataContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    color: #000;
+    font-size: 16px;
+}
+
+.profilePhotoContainer{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.contentContainer{
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.content{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    width: 70vw;
+}
