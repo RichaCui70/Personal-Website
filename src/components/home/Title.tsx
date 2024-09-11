@@ -45,7 +45,7 @@ export default function Title({
     return () => {
       typed.destroy();
     };
-  }, [changePhotoWrapper, changeFadeType]);
+  }, []);
 
   return (
     <div>
