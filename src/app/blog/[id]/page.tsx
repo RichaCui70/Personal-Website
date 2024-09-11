@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-import { BlogHeader } from "../page";
-
+import BlogHeader from "@/components/blog/BlogHeader";
 import styles from "@/styles/blog/BlogPage.module.css";
 import { getSortedPostsData, getPostData } from "@/lib/posts";
 import { blogMetaData } from "@/lib/constants";
