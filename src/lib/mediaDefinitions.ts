@@ -17,7 +17,7 @@ export const TITLES = [
     title: "a big F1 fan",
   },
   {
-    photo: "/photos/backgroundblurb/hockey.jpg",
+    photo: "/photos/backgroundblurb/hockeyRattlers.jpg",
     title: "a goalie",
   },
   {
