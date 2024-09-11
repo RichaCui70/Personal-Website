@@ -8,9 +8,9 @@ import {
 
 import { pageType } from "@/lib/constants";
 
-import styles from "@/styles/navbar/NavBar.module.css"
+import styles from "@/styles/navbar/NavBar.module.css";
 
-export default function MyNavBar({page}: {page: pageType}) {
+export default function MyNavBar({ page }: { page: pageType }) {
   return (
     <Navbar
       position="sticky"
@@ -21,8 +21,11 @@ export default function MyNavBar({page}: {page: pageType}) {
       <NavbarBrand>
         <p className={`${styles.navbarTitle} ${styles.navbar}`}>Richard Cui</p>
       </NavbarBrand>
-      <NavbarContent justify="end" className={`${styles.navbarItems} ${styles.navbar}`}>
-        { (page === "home") && (
+      <NavbarContent
+        justify="end"
+        className={`${styles.navbarItems} ${styles.navbar}`}
+      >
+        {page === "home" && (
           <>
             <NavbarItem>
               <Link color="foreground" href="#">
@@ -34,21 +37,21 @@ export default function MyNavBar({page}: {page: pageType}) {
                 Projects
               </Link>
             </NavbarItem>
-            <NavbarItem>
-              <Link color="foreground" href="/blog">
-                Blog
-              </Link>
-            </NavbarItem>
           </>
         )}
-        { (page === "blog") && (
-          <>
-            <NavbarItem>
-              <Link color="foreground" href="/">
-                Home
-              </Link>
-            </NavbarItem>
-          </>
+        {(page === "home" || page === "blogPage") && (
+          <NavbarItem>
+            <Link color="foreground" href="/blog">
+              Blog
+            </Link>
+          </NavbarItem>
+        )}
+        {(page === "blog" || page === "blogPage") && (
+          <NavbarItem>
+            <Link color="foreground" href="/">
+              Home
+            </Link>
+          </NavbarItem>
         )}
       </NavbarContent>
     </Navbar>

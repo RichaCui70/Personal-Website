@@ -4,22 +4,14 @@ import FeaturedBlogs from "@/components/blog/FeaturedBlogs";
 import styles from "@/styles/blog/BlogLandingPage.module.css";
 import RecentBlogs from "@/components/blog/RecentBlogs";
 import { getSortedPostsData } from "@/lib/posts";
-import { blogMetaData } from "@/lib/constants";
+import { blogMetaData, pageType } from "@/lib/constants";
 
 export default function BlogLandingPage() {
   const allPostsData = getSortedPostsData() as blogMetaData[];
 
   return (
     <>
-      <MyNavBar page="blog" />
-      <header
-        className={styles.landingPageHeader}
-        style={{ backgroundImage: "url('/photos/blogs/test6.jpg')" }}
-      >
-        <h1 className={styles.blogLandingPageTitle}>
-          Hello,<br></br>welcome to the blog
-        </h1>
-      </header>
+      <BlogHeader navbarType="blog" title="Hello, welcome to the blog" />
       <section className={styles.blogLandingPageContent}>
         <h2 className={styles.contentHeader}>Featured.</h2>
         <div className={styles.featuredContent}>
@@ -60,6 +52,22 @@ export default function BlogLandingPage() {
           )}
         </div>
       </section>
+    </>
+  );
+}
+
+export function BlogHeader({ navbarType, title }: { navbarType: pageType, title: string }) {
+  return (
+    <>
+      <MyNavBar page={navbarType} />
+      <header
+        className={styles.landingPageHeader}
+        style={{ backgroundImage: "url('/photos/blogs/test6.jpg')" }}
+      >
+        <h1 className={styles.blogLandingPageTitle}>
+          {title}
+        </h1>
+      </header>
     </>
   );
 }
