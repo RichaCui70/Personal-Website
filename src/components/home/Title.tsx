@@ -19,6 +19,7 @@ export default function Title({
 
   const changePhotoWrapper = useCallback(
     (arrayPos: number) => {
+      console.log(arrayPos);
       changePhoto(photos[arrayPos]);
       changeFade("in");
     },
