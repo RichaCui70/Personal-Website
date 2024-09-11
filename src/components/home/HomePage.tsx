@@ -41,7 +41,7 @@ function HomePageContents({
     <article className="px-16 flex flex-col place-content-center gap-16 text-default">
       <Title changePhoto={changePhoto} changeFade={changeFade} />
       <div className={styles.bio}>
-        <p>I'm...</p>
+        <p>I&apos;m...</p>
         <ul className={styles.list}>
           <li>A student at the University of Guelph 🦅</li>
           <li>An aspiring UI/UX designer 🖌</li>

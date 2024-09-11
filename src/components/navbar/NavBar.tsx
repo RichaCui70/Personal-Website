@@ -6,9 +6,11 @@ import {
   Link,
 } from "@nextui-org/react";
 
-import styles from "@/styles/navbar/NavBar.module.css"
+import { pageType } from "@/lib/constants";
 
-export default function MyNavBar() {
+import styles from "@/styles/navbar/NavBar.module.css";
+
+export default function MyNavBar({ page }: { page: pageType }) {
   return (
     <Navbar
       position="sticky"
@@ -19,17 +21,38 @@ export default function MyNavBar() {
       <NavbarBrand>
         <p className={`${styles.navbarTitle} ${styles.navbar}`}>Richard Cui</p>
       </NavbarBrand>
-      <NavbarContent justify="end" className={`${styles.navbarItems} ${styles.navbar}`}>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            About me
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Projects
-          </Link>
-        </NavbarItem>
+      <NavbarContent
+        justify="end"
+        className={`${styles.navbarItems} ${styles.navbar}`}
+      >
+        {page === "home" && (
+          <>
+            <NavbarItem>
+              <Link color="foreground" href="#">
+                About me
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="#">
+                Projects
+              </Link>
+            </NavbarItem>
+          </>
+        )}
+        {(page === "home" || page === "blogPage") && (
+          <NavbarItem>
+            <Link color="foreground" href="/blog">
+              Blog
+            </Link>
+          </NavbarItem>
+        )}
+        {(page === "blog" || page === "blogPage") && (
+          <NavbarItem>
+            <Link color="foreground" href="/">
+              Home
+            </Link>
+          </NavbarItem>
+        )}
       </NavbarContent>
     </Navbar>
   );

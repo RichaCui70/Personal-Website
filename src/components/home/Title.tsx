@@ -22,12 +22,12 @@ export default function Title({
       changePhoto(photos[arrayPos]);
       changeFade("in");
     },
-    [photos],
+    [photos, changePhoto, changeFade],
   );
 
   const changeFadeType = useCallback(() => {
     changeFade("out");
-  }, []);
+  }, [changeFade]);
 
   useEffect(() => {
     const typed = new Typed("#toBeTyped", {
@@ -45,11 +45,11 @@ export default function Title({
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [changePhotoWrapper, changeFadeType]);
 
   return (
     <div>
-      <h2 className={styles.title}>Hello, I'm</h2>
+      <h2 className={styles.title}>Hello, I&apos;m</h2>
       <div className={styles.subTitle}>
         <span id="toBeTyped">&nbsp;</span>
       </div>
