@@ -15,46 +15,39 @@ export function generateStaticParams() {
 
 export default function Page({ params }: { params: { id: string } }) {
   const buffer = getPostData(params.id) as blogMetaData;
-  const { title, date, photo, content, author } = buffer;
+  const { title, date, photo, content, author, profilePic } = buffer;
 
   return (
     <>
       <BlogHeader navbarType="blogPage" title={title} />
       <div className={styles.dividerContainer}>
-        <div
-          className={styles.chevronContainer}
-          style={{ backgroundColor: "#FF8965" }}
-        >
-          {/* <Image
-            src="/blurbs/chevron-left.svg"
-            alt="Chevron left"
-            fill
-          /> */}
-        </div>
+        <Image
+          src="/icons/ChevronLeft.png"
+          alt="Chevron left"
+          width={24}
+          height={24}
+        />
         <hr className={styles.divider} />
-        <div
-          className={styles.chevronContainer}
-          style={{ backgroundColor: "#FF8965" }}
-        >
-          {/* <Image
-            src="/blurbs/chevron-right.svg"
-            alt="Chevron right"
-            fill
-          /> */}
-        </div>
+        <Image
+          src="/icons/ChevronRight.png"
+          alt="Chevron right"
+          width={24}
+          height={24}
+        />
       </div>
       <div className={styles.blogMetaDataContainer}>
-        <div
-          className={styles.profilePhotoContainer}
-          style={{ backgroundColor: "#FF8965" }}
-        >
-          {/* <Image /> */}
-        </div>
+        <Image
+          width={48}
+          height={48}
+          src={profilePic}
+          alt={`${author}'s profile pic`}
+          style={{ borderRadius: "50%" }}
+        />
         <h5 style={{ fontWeight: 600 }}>{author}</h5>
         <h6 style={{ fontWeight: 300 }}>{date}</h6>
       </div>
       <article className={styles.contentContainer}>
-        <p className={styles.content}>{content}</p>
+        <span className={styles.content}>{content}</span>
       </article>
     </>
   );

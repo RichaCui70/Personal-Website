@@ -3,10 +3,9 @@ title: My First Blog Post.
 description: Welcome to my first ever blog post! I'm not sure what I'll be talking about but here's a little blurb of whatever I'm thinking about right now! Enjoy!
 author: Richard Cui
 date: 09/08/2024
-photo: /photos/blogs/wingsforlife.jpg
+photo: /photos/blogs/1-wingsforlife.jpg
 alt: Photo of Richard Cui under Red Bull baloon arch
 ---
-
 Hello! I'm trying to write some stuff for my blog. Currently it's September 8th, 2024, 6:42pm EST. I have to run 16k soon and I'm not too excited about that. I know I'll be able to do it but it's still that mental block of: "Do I want to?". Well 100% I don't have to. So why do I want to run 16k nevertheless a marathon...
 
 Well in all fairness, I've already talked the talk. I remember watching this Instagram reel where some guy talked about that happy feeling of telling everyone you're running a marathon. You feel like a superstar and everyone is so proud of you. But now you're here and you actually have to do it, way different story. You don't want to let anyone down now. People are rooting for you and now it's more than just about you. That's one of the reasons why I run: because I don't want to let anybody down.
