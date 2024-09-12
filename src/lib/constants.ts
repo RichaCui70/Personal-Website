@@ -8,5 +8,6 @@ export interface blogMetaData {
     description: string
     photo: string
     alt: string
+    profilePic: string
     content: string
 }

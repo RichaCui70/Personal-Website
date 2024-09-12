@@ -24,12 +24,6 @@
     font-size: 16px;
 }
 
-.profilePhotoContainer{
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-}
-
 .contentContainer{
     display: flex;
     margin-top: 24px;
@@ -42,4 +36,5 @@
     font-weight: 400;
     line-height: 32px; /* 200% */
     width: 70vw;
+    white-space: pre-line;
 }

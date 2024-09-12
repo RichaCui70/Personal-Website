@@ -1,4 +1,3 @@
-import MyNavBar from "@/components/navbar/NavBar";
 import FeaturedBlogs from "@/components/blog/FeaturedBlogs";
 import BlogHeader from "@/components/blog/BlogHeader";
 import styles from "@/styles/blog/BlogLandingPage.module.css";
