@@ -19,7 +19,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <BlogHeader navbarType="blogPage" title={title} />
+      <BlogHeader navbarType="blogPage" title={title} photo={photo} />
       <div className={styles.dividerContainer}>
         <Image
           src="/icons/ChevronLeft.png"

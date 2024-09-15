@@ -10,7 +10,7 @@ export default function BlogLandingPage() {
 
   return (
     <>
-      <BlogHeader navbarType="blog" title="Hello, welcome to the blog" />
+      <BlogHeader navbarType="blog" title="Hello, welcome to the blog" photo="/photos/blogs/home.jpg" />
       <section className={styles.blogLandingPageContent}>
         <h2 className={styles.contentHeader}>Featured.</h2>
         <div className={styles.featuredContent}>
