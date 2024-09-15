@@ -44,7 +44,7 @@ export default function BlogLandingPage() {
                   description={description}
                   photo={banner}
                   alt={alt}
-                  photoPlacement={(index % 2 === 1) ? "right" : "left"}
+                  photoPlacement={(false) ? "right" : "left"}
                 />
               );
             },

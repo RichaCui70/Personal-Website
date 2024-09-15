@@ -39,7 +39,7 @@
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 48px;
 }
 
