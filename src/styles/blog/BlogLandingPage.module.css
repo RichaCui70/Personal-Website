@@ -36,15 +36,26 @@
 
 .featuredContent {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 48px;
 }
 
 .recentContent {
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  .featuredContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }

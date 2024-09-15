@@ -23,7 +23,7 @@ export default function RecentBlogs({
   return (
     <div className={styles.recentCardContainer}>
       {photoPlacement === "left" && (
-        <Image src={photo} alt={alt} width={632} height={356} />
+        <Image src={photo} alt={alt} width={960} height={720} />
       )}
       <div
         className={styles.cardTitleContainer}

@@ -3,7 +3,8 @@ title: My First Co-op Term.
 description: A little insight into what co-op is like at Guelph + advice for people looking to get started with their co-op term. 
 author: Richard Cui
 date: 09/11/2024
-photo: /photos/blogs/2-lincsmap.png
+thumbnail: /photos/blogs/4-3/2-lincsmap.png
+banner: /photos/blogs/16-9/2-lincsmap.png
 alt: A map of services the LINCS Project offers
 ---
 Well summer '24 has passed and we're here writing our first work term report ever. How exciting! I'm hoping that with this blog post, you all will take away a little more insight as to how applications actually work, what to expect on the job, and some first-timer wisdom along the read.

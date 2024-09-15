@@ -15,11 +15,11 @@ export function generateStaticParams() {
 
 export default function Page({ params }: { params: { id: string } }) {
   const buffer = getPostData(params.id) as blogMetaData;
-  const { title, date, photo, content, author, profilePic } = buffer;
+  const { title, date, banner, content, author, profilePic } = buffer;
 
   return (
     <>
-      <BlogHeader navbarType="blogPage" title={title} photo={photo} />
+      <BlogHeader navbarType="blogPage" title={title} photo={banner} />
       <div className={styles.dividerContainer}>
         <Image
           src="/icons/ChevronLeft.png"

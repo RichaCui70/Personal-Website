@@ -10,19 +10,19 @@ export default function BlogLandingPage() {
 
   return (
     <>
-      <BlogHeader navbarType="blog" title="Hello, welcome to the blog" photo="/photos/blogs/home.jpg" />
+      <BlogHeader navbarType="blog" title="Hello, welcome to the blog" photo="/photos/blogs/16-9/home.jpg" />
       <section className={styles.blogLandingPageContent}>
         <h2 className={styles.contentHeader}>Featured.</h2>
         <div className={styles.featuredContent}>
           {allPostsData.map(
-            ({ id, title, date, author, photo, alt }, index) => {
+            ({ id, title, date, author, thumbnail, alt }, index) => {
               return (
                 <FeaturedBlogs
                   key={id}
                   id={id}
                   title={title}
                   subtitle={author + " - " + date}
-                  photo={photo}
+                  photo={thumbnail}
                   alt={alt}
                 />
               );
@@ -34,7 +34,7 @@ export default function BlogLandingPage() {
         <h2 className={styles.contentHeader}>Recent.</h2>
         <div className={styles.recentContent}>
           {allPostsData.map(
-            ({ id, title, date, author, description, photo, alt }, index) => {
+            ({ id, title, date, author, description, banner, alt }, index) => {
               return (
                 <RecentBlogs
                   key={id}
@@ -42,7 +42,7 @@ export default function BlogLandingPage() {
                   title={title}
                   subtitle={author + " - " + date}
                   description={description}
-                  photo={photo}
+                  photo={banner}
                   alt={alt}
                   photoPlacement={(index % 2 === 1) ? "right" : "left"}
                 />

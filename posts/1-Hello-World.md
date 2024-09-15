@@ -3,7 +3,8 @@ title: My First Blog Post.
 description: Welcome to my first ever blog post! I'm not sure what I'll be talking about but here's a little blurb of whatever I'm thinking about right now! Enjoy!
 author: Richard Cui
 date: 09/08/2024
-photo: /photos/blogs/1-wingsforlife.jpg
+thumbnail: /photos/blogs/4-3/1-wingsforlife.jpg
+banner: /photos/blogs/16-9/1-wingsforlife.jpg
 alt: Photo of Richard Cui under Red Bull baloon arch
 ---
 Hello! I'm trying to write some stuff for my blog. Currently it's September 8th, 2024, 6:42pm EST. I have to run 16k soon and I'm not too excited about that. I know I'll be able to do it but it's still that mental block of: "Do I want to?". Well 100% I don't have to. So why do I want to run 16k nevertheless a marathon...
