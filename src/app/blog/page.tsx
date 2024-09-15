@@ -3,7 +3,7 @@ import BlogHeader from "@/components/blog/BlogHeader";
 import styles from "@/styles/blog/BlogLandingPage.module.css";
 import RecentBlogs from "@/components/blog/RecentBlogs";
 import { getSortedPostsData } from "@/lib/posts";
-import { blogMetaData, pageType } from "@/lib/constants";
+import { blogMetaData } from "@/lib/constants";
 
 export default function BlogLandingPage() {
   const allPostsData = getSortedPostsData() as blogMetaData[];

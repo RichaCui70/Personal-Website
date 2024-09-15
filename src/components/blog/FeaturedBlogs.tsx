@@ -33,7 +33,7 @@ export default function FeaturedBlogs({
         </div>
         <hr className={styles.cardDivider}></hr>
         <Link href={`/blog/${id}`}>
-          <h3 className={styles.cardReadMore}>Read More</h3>
+          <h3 className={`${styles.cardReadMore} hover:underline`}>Read More</h3>
         </Link>
       </div>
     </div>
