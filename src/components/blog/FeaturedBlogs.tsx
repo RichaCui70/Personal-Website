@@ -10,7 +10,7 @@ export default function FeaturedBlogs({
   photo,
   alt,
 }: {
-  id: string;
+  id: number;
   title: string;
   subtitle: string;
   photo: string;
