@@ -5,7 +5,8 @@ export interface blogMetaData {
     author: string,
     date: string,
     description: string
-    photo: string
+    thumbnail: string
+    banner: string
     alt: string
     content: string[]
 }

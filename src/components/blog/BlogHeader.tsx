@@ -8,7 +8,7 @@ export default function BlogHeader({ navbarType, title, photo }: { navbarType: p
         <MyNavBar page={navbarType} />
         <header
           className={styles.landingPageHeader}
-          style={{ backgroundImage: `url('${photo}')` }}
+          style={{ backgroundImage: `url('${photo}')`}}
         >
           <h1 className={styles.blogLandingPageTitle}>
             {title}

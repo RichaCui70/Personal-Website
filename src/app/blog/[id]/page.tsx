@@ -8,21 +8,25 @@ import { blogMetaData } from "@/lib/constants";
 import { pfpMap } from "@/lib/profilePicDefinitions";
 
 export function generateStaticParams() {
-  const blogs = posts as blogMetaData[];
+  const blogs = posts;
 
-  return blogs.map((blog) => {
-    return { id: blog.title };
-  });
+  const returnValue = [];
+
+  for (const i in blogs) {
+    returnValue.push({ id: i });
+  }
+
+  return returnValue;
 }
 
 export default function Page({ params }: { params: { id: number } }) {
-  const { title, date, photo, content, author } = posts[
+  const { title, date, banner, content, author } = posts[
     params.id
   ] as blogMetaData;
 
   return (
     <>
-      <BlogHeader navbarType="blogPage" title={title} photo={photo} />
+      <BlogHeader navbarType="blogPage" title={title} photo={banner} />
       <div className={styles.dividerContainer}>
         <Image
           src="/icons/ChevronLeft.png"

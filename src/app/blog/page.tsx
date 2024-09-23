@@ -3,7 +3,7 @@ import FeaturedBlogs from "@/components/blog/FeaturedBlogs";
 import BlogHeader from "@/components/blog/BlogHeader";
 import styles from "@/styles/blog/BlogLandingPage.module.css";
 import RecentBlogs from "@/components/blog/RecentBlogs";
-import { blogMetaData, pageType } from "@/lib/constants";
+import { blogMetaData } from "@/lib/constants";
 
 export default function BlogLandingPage() {
 
@@ -11,19 +11,19 @@ export default function BlogLandingPage() {
 
   return (
     <>
-      <BlogHeader navbarType="blog" title="Hello, welcome to the blog" photo="/photos/blogs/test1.jpg" />
+      <BlogHeader navbarType="blog" title="Hello, welcome to the blog" photo="/photos/blogs/16-9/home.jpg" />
       <section className={styles.blogLandingPageContent}>
         <h2 className={styles.contentHeader}>Featured.</h2>
         <div className={styles.featuredContent}>
           {blogs.map(
-            ({ title, date, author, photo, alt }, index) => {
+            ({ title, date, author, thumbnail, alt }, index) => {
               return (
                 <FeaturedBlogs
                   key={title}
                   id={index}
                   title={title}
                   subtitle={author + " - " + date}
-                  photo={photo}
+                  photo={thumbnail}
                   alt={alt}
                 />
               );
@@ -35,7 +35,7 @@ export default function BlogLandingPage() {
         <h2 className={styles.contentHeader}>Recent.</h2>
         <div className={styles.recentContent}>
           {blogs.map(
-            ({ title, date, author, description, photo, alt }, index) => {
+            ({ title, date, author, description, banner, alt }, index) => {
               return (
                 <RecentBlogs
                   key={title}
@@ -43,9 +43,9 @@ export default function BlogLandingPage() {
                   title={title}
                   subtitle={author + " - " + date}
                   description={description}
-                  photo={photo}
+                  photo={banner}
                   alt={alt}
-                  photoPlacement="right"
+                  photoPlacement={(false) ? "right" : "left"}
                 />
               );
             },

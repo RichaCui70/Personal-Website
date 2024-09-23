@@ -23,7 +23,7 @@ export default function RecentBlogs({
   return (
     <div className={styles.recentCardContainer}>
       {photoPlacement === "left" && (
-        <Image src={photo} alt={alt} width={632} height={356} />
+        <Image src={photo} alt={alt} width={600} height={1} />
       )}
       <div
         className={styles.cardTitleContainer}
@@ -35,11 +35,11 @@ export default function RecentBlogs({
         </div>
         <p className={styles.cardDescription}>{description}</p>
         <Link href={`/blog/${id}`}>
-          <h3 className={styles.cardReadMore}>Read More</h3>
+          <h3 className={`${styles.cardReadMore} hover:underline`}>Read More</h3>
         </Link>
       </div>
       {photoPlacement === "right" && (
-        <Image src={photo} alt={alt} width={632} height={356} />
+        <Image src={photo} alt={alt} width={600} height={1} />
       )}
     </div>
   );
