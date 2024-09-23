@@ -1,6 +1,5 @@
 import MyNavBar from "@/components/navbar/NavBar";
 import HomePage from "@/components/home/HomePage";
-import TransitionBlurb from "@/components/TransitionBlurb";
 import ProjectsPage from "@/components/projects/ProjectsPage";
 
 export default function Home() {
@@ -8,10 +7,6 @@ export default function Home() {
     <>
       <MyNavBar page="home" />
       <HomePage />
-      <TransitionBlurb
-        title="Project"
-        subtitle="POV: I try and create a quirky projects layout"
-      />
       <ProjectsPage />
     </>
   );

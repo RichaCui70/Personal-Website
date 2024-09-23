@@ -23,7 +23,7 @@ export default function HomePage() {
   };
 
   return (
-    <section className="grid grid-cols-2">
+    <section className={styles.mainSection}>
       <BackgroundBlurb photo={photo} fade={fade} />
       <HomePageContents changePhoto={changePhoto} changeFade={changeFade} />
     </section>
