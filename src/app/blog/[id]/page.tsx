@@ -1,25 +1,28 @@
 import Image from "next/image";
+import parse from "html-react-parser";
 
 import BlogHeader from "@/components/blog/BlogHeader";
 import styles from "@/styles/blog/BlogPage.module.css";
-import { getSortedPostsData, getPostData } from "@/lib/posts";
+import posts from "@/lib/posts.json";
 import { blogMetaData } from "@/lib/constants";
+import { pfpMap } from "@/lib/profilePicDefinitions";
 
 export function generateStaticParams() {
-  const allPostsData = getSortedPostsData() as blogMetaData[];
+  const blogs = posts as blogMetaData[];
 
-  return allPostsData.map((post) => {
-    return { id: post.id };
+  return blogs.map((blog) => {
+    return { id: blog.title };
   });
 }
 
-export default function Page({ params }: { params: { id: string } }) {
-  const buffer = getPostData(params.id) as blogMetaData;
-  const { title, date, photo, content, author, profilePic } = buffer;
+export default function Page({ params }: { params: { id: number } }) {
+  const { title, date, photo, content, author } = posts[
+    params.id
+  ] as blogMetaData;
 
   return (
     <>
-      <BlogHeader navbarType="blogPage" title={title} />
+      <BlogHeader navbarType="blogPage" title={title} photo={photo} />
       <div className={styles.dividerContainer}>
         <Image
           src="/icons/ChevronLeft.png"
@@ -39,7 +42,7 @@ export default function Page({ params }: { params: { id: string } }) {
         <Image
           width={48}
           height={48}
-          src={profilePic}
+          src={pfpMap[author]}
           alt={`${author}'s profile pic`}
           style={{ borderRadius: "50%" }}
         />
@@ -47,7 +50,11 @@ export default function Page({ params }: { params: { id: string } }) {
         <h6 style={{ fontWeight: 300 }}>{date}</h6>
       </div>
       <article className={styles.contentContainer}>
-        <span className={styles.content}>{content}</span>
+        <span className={styles.content}>
+          {content.map((paragraph) => (
+            <>{parse(paragraph)}</>
+          ))}
+        </span>
       </article>
     </>
   );

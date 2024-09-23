@@ -22,3 +22,13 @@
     text-wrap: balance;
   }
 }
+
+ul{
+  list-style: disc;
+  list-style-position: inside;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 500;
+}
