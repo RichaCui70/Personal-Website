@@ -7,6 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --transition-blurb-aspect-ratio: 0.2375;
+  --beige: #F1DAC4;
+  --orange: #FF8965;
+  --blue: #474973;
 }
 
 @media (prefers-color-scheme: dark) {

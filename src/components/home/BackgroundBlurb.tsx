@@ -22,7 +22,6 @@ export default function Blurb({
     >
       <svg
         width="100%"
-        // height="650"
         viewBox="0 0 224.89583 171.97917"
         version="1.1"
         id="svg1"

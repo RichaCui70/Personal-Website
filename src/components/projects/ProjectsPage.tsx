@@ -1,15 +1,9 @@
 import styles from "@/styles/projects/ProjectsPage.module.css";
-import TransitionBlurb from "@/components/TransitionBlurb";
 import Project from "@/components/projects/Project";
 
 export default function ProjectsPage() {
   return (
-    <section>
-      <TransitionBlurb
-        title="Project"
-        subtitle="POV: I try and create a quirky projects layout"
-      />
-      <div className={styles.container}>
+      <div className={styles.container} id="projects">
         <Project
           title="LINCS Dashboard"
           subtitle="NextJS, TypeScript, NextUI, Tailwind Jest, Docker, Git"
@@ -41,6 +35,5 @@ export default function ProjectsPage() {
           photo="/photos/projects/Traingazing.jpg"
         />
       </div>
-    </section>
   );
 }
