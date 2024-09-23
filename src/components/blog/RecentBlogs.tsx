@@ -12,7 +12,7 @@ export default function RecentBlogs({
   alt,
   photoPlacement,
 }: {
-  id: string;
+  id: number;
   title: string;
   subtitle: string;
   description: string;
