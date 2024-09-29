@@ -1,9 +1,10 @@
 import styles from "@/styles/projects/ProjectsPage.module.css";
-import Project from "@/components/projects/Project";
 
 export default function ProjectsPage() {
   return (
-      <div className={styles.container} id="projects">
+    <div className={styles.container} id="projects">
+      <h2 className={styles.title}>Projects.</h2>
+      <div className={styles.projectContainer}>
         <Project
           title="LINCS Dashboard"
           subtitle="NextJS, TypeScript, NextUI, Tailwind Jest, Docker, Git"
@@ -35,5 +36,16 @@ export default function ProjectsPage() {
           photo="/photos/projects/Traingazing.jpg"
         />
       </div>
+    </div>
   );
+}
+
+function Project({title, subtitle, photo}: {title: string, subtitle: string, photo: string}) {
+
+  return (
+      <div className={styles.projectCard} style={{backgroundImage: `url("${photo}")`}}>
+          <h2 className={styles.projectTitle}>{title}</h2>
+          <h5 className={styles.projectSubTitle}>{subtitle}</h5>
+      </div>
+  )
 }

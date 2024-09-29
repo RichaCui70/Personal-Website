@@ -1,17 +1,12 @@
 import MyNavBar from "@/components/navbar/NavBar";
 import HomePage from "@/components/home/HomePage";
 import ProjectsPage from "@/components/projects/ProjectsPage";
-import TransitionBlurb from "@/components/TransitionBlurb";
 
 export default function Home() {
   return (
     <>
       <MyNavBar page="home" />
       <HomePage />
-      <TransitionBlurb
-        title="Project"
-        subtitle="POV: I try and create a quirky projects layout"
-      />
       <ProjectsPage />
     </>
   );

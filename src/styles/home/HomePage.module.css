@@ -1,6 +1,6 @@
 .mainSection {
   display: relative;
-  height: 80vh;
+  height: 90vh;
 }
 
 .contentSection{
@@ -15,6 +15,7 @@
   top: 0;
   bottom: 0;
   color: white;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .titleBlock {
@@ -101,12 +102,12 @@
   .mainSection {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    height: 80vh;
   }
 
   .contentSection {
     position: static;
     color: black;
+    background-color: transparent;
   }
 
   .bio {
