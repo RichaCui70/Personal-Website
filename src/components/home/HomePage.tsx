@@ -23,7 +23,7 @@ export default function HomePage() {
   };
 
   return (
-    <section className="grid grid-cols-2">
+    <section className={styles.mainSection}>
       <BackgroundBlurb photo={photo} fade={fade} />
       <HomePageContents changePhoto={changePhoto} changeFade={changeFade} />
     </section>
@@ -38,7 +38,7 @@ function HomePageContents({
   changeFade: (fadeType: fadeType) => void;
 }) {
   return (
-    <article className="px-16 flex flex-col place-content-center gap-16 text-default">
+    <article className={`${styles.contentSection}`}>
       <Title changePhoto={changePhoto} changeFade={changeFade} />
       <div className={styles.bio}>
         <p>I&apos;m...</p>

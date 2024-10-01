@@ -17,6 +17,7 @@ export default function MyNavBar({ page }: { page: pageType }) {
       maxWidth="full"
       className="px-16 bg-secondary"
       classNames={{ wrapper: "p-0" }}
+      style={{height: "10vh"}}
     >
       <NavbarBrand>
         <p className={`${styles.navbarTitle} ${styles.navbar}`}>Richard Cui</p>

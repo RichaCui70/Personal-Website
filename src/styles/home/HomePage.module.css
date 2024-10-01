@@ -1,3 +1,23 @@
+.mainSection {
+  display: relative;
+  height: 90vh;
+}
+
+.contentSection{
+  position: absolute;
+  padding: 0rem 4rem;
+  gap: 4rem;
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  left: 0; 
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
 .titleBlock {
   display: flex;
   flex-direction: column;
@@ -27,7 +47,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -46,9 +66,7 @@
 }
 
 .backgroundBlurbFade {
-  width: 100%;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
+  display: block;
 }
 
 .backgroundBlurbFade.backgroundBlurbFadeIn {
@@ -77,5 +95,29 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainSection {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contentSection {
+    position: static;
+    color: black;
+    background-color: transparent;
+  }
+
+  .bio {
+    font-size: 24px;
+  }
+
+  .backgroundBlurbFade {
+    display: block;
+    width: 100%;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
   }
 }
