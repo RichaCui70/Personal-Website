@@ -3,7 +3,7 @@ import styles from "@/styles/projects/ProjectsPage.module.css";
 export default function ProjectsPage() {
   return (
     <div className={styles.container} id="projects">
-      <h2 className={styles.title}>Projects.</h2>
+      <h2>Projects.</h2>
       <div className={styles.projectContainer}>
         <Project
           title="LINCS Dashboard"
@@ -44,7 +44,7 @@ function Project({title, subtitle, photo}: {title: string, subtitle: string, pho
 
   return (
       <div className={styles.projectCard} style={{backgroundImage: `url("${photo}")`}}>
-          <h2 className={styles.projectTitle}>{title}</h2>
+          <h3 className={styles.projectTitle}>{title}</h3>
           <h5 className={styles.projectSubTitle}>{subtitle}</h5>
       </div>
   )
