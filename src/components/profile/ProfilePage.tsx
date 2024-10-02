@@ -24,9 +24,29 @@ export default function ProfilePage() {
                     <p>Anyways, check out what I&apos;ve been up to recently!</p>
                 </div>
             </div>
-            <div>
+            <div className={styles.experienceSection}>
+                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
 
             </div>
         </section>
+    )
+}
+
+function ExperienceCard({title, date, company, logo, alt, background}: {title: string, date: string, company: string, logo: string, alt: string, background: string}) {
+    return (
+        <div className={styles.experienceContainer} style={{backgroundImage: `url('${background}')`}} >
+            <div className={styles.titleContainer}>
+                <h3>{title}</h3>
+                <div style={{fontSize: "12px"}}>
+                    <p>{date}</p>
+                    <p>{company}</p>
+                </div>
+            </div>
+            <Image src={logo} alt={alt} height={16} width={16} />
+        </div>
     )
 }

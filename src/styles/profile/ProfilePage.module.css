@@ -27,6 +27,32 @@
     border-radius: 50%;
 }
 
+.experienceSection{
+    padding: 0px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.experienceContainer{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    position: relative;
+    border-radius: 24.5px;
+    border-width: 4px;
+    border-color: var(--orange);
+    padding: 16px;
+    color: white;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 1024px){
     .biographyContainer{
         flex-direction: row-reverse;
