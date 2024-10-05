@@ -46,6 +46,13 @@
     border-color: var(--orange);
     padding: 16px;
     color: white;
+    align-items: center;
+}
+
+.logoContainer{
+    height: 64px;
+    width: 64px;
+    position: relative;
 }
 
 .titleContainer{

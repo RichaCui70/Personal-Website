@@ -7,7 +7,7 @@ export default function ProfilePage() {
             <h2>About Me.</h2>
             <div className={styles.biographyContainer}>
                 <div className={styles.profilePhoto}>
-                    <Image src="/photos/projects/Traingazing.jpg" fill alt="Richard Cui's profile picture" className={styles.profilePhoto}  />
+                    <Image src="/pfp/richardcui.png" fill alt="Richard Cui's profile picture" className={styles.profilePhoto}  />
                 </div>
                 <div className={styles.biography}>
                     <h3>Hello!</h3>
@@ -46,7 +46,9 @@ function ExperienceCard({title, date, company, logo, alt, background}: {title: s
                     <p>{company}</p>
                 </div>
             </div>
-            <Image src={logo} alt={alt} height={16} width={16} />
+            <div className={styles.logoContainer}>
+                <Image src={logo} alt={alt} fill />
+            </div>
         </div>
     )
 }

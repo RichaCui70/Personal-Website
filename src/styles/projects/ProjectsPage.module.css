@@ -1,78 +1,82 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--orange);
-    height: unset;
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--orange);
+  height: unset;
 }
 
 .title {
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    padding: 48px 0px 0px 64px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 48px 0px 0px 64px;
 }
 
 .subtitle {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.projectContainer{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    justify-items: center;
-    gap: 48px;
-    padding: 48px 64px;
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  gap: 48px;
+  padding: 48px 64px;
 }
 
-.projectCard{
-    display: flex;
-    flex-direction: column;
+.projectCard {
+  display: flex;
+  flex-direction: column;
 
-    height: 243px;
-    width: 100%;
-    max-width: 400px;
+  height: 243px;
+  width: 100%;
+  max-width: 400px;
 
-    gap: 16px;
-    justify-content: center;
-    text-align: center;
-    padding: 0px 16px;
-    border-radius: 24.5px;
-    border-width: 4px;
-    border-color: var(--blue);
+  gap: 16px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 16px;
+  border-radius: 24.5px;
+  border-width: 4px;
+  border-color: var(--blue);
+
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+
+  background-size: 100%;
 }
 
-.projectCard:hover{
-    box-shadow: 5px 5px var(--beige);
+.projectCard:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
-.projectTitle{
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.projectTitle {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.projectSubTitle{
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.projectSubTitle {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media (min-width: 1024px) {
-    .projectContainer{
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-template-rows: repeat(2, minmax(0, 1fr));
-        justify-items: center;
-        gap: 48px;
-        padding: 48px 64px;
-    }
+  .projectContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+    gap: 48px;
+    padding: 48px 64px;
+  }
 }

@@ -8,32 +8,32 @@ export default function ProjectsPage() {
         <Project
           title="LINCS Dashboard"
           subtitle="NextJS, TypeScript, NextUI, Tailwind Jest, Docker, Git"
-          photo="/photos/projects/Traingazing.jpg"
+          photo="/photos/projects/Dashboard.png"
         />
         <Project
           title="RLS Shift Hub"
           subtitle="Django, Python, Javascript, SQL, Pandas"
-          photo="/photos/projects/Traingazing.jpg"
+          photo="/photos/projects/Shift.jpg"
         />
         <Project
           title="Mancala"
           subtitle="Java, JUnit, SwingUI, Gradle, Docker "
-          photo="/photos/projects/Traingazing.jpg"
+          photo="/photos/projects/Mancala.png"
         />
         <Project
           title="Billiards"
           subtitle="C, Python, Swig, HTML, SQL, JQuery, Bootstrap"
-          photo="/photos/projects/Traingazing.jpg"
+          photo="/photos/projects/Billiards.png"
         />
         <Project
           title="Arduino Jukebox"
           subtitle="Python, Arduino/C++, Soldering, Spotify API"
-          photo="/photos/projects/Traingazing.jpg"
+          photo="/photos/projects/Soldering.jpg"
         />
         <Project
           title="Multi-threaded Spellchecker"
           subtitle="C, PThread, Unistd,  Makefile, Docker"
-          photo="/photos/projects/Traingazing.jpg"
+          photo="/photos/projects/Spellchecker.png"
         />
       </div>
     </div>
