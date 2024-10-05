@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-color: var(--beige);
+    color: black;
+}
+
+.biographyContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 64px;
+    gap: 8px;
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.profilePhoto{
+    height: 64px;
+    width: 64px;
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.experienceSection{
+    padding: 0px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.experienceContainer{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    position: relative;
+    border-radius: 24.5px;
+    border-width: 4px;
+    border-color: var(--orange);
+    padding: 16px;
+    color: white;
+    align-items: center;
+}
+
+.logoContainer{
+    height: 64px;
+    width: 64px;
+    position: relative;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px){
+    .biographyContainer{
+        flex-direction: row-reverse;
+        gap: 48px;
+    }
+    
+    .profilePhoto{
+        height: auto;
+        width: 480px;
+        border-radius: 24.5px
+    }
+}
