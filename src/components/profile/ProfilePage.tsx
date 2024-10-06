@@ -1,5 +1,6 @@
 import styles from "@/styles/profile/ProfilePage.module.css"
 import Image from "next/image"
+import {Divider} from "@nextui-org/divider";
 
 export default function ProfilePage() {
     return (
@@ -24,13 +25,15 @@ export default function ProfilePage() {
                     <p>Anyways, check out what I&apos;ve been up to recently!</p>
                 </div>
             </div>
-            <div className={styles.experienceSection}>
-                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-                <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+            {/* <div className={styles.experienceSection}>
+            <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+            <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
 
+            </div> */}
+            <div className={styles.timelineContainer}>
+                <div style={{position: "relative", display: "flex"}}>
+                    <Divider orientation="vertical" style={{height: "100px"}} />
+                </div>
             </div>
         </section>
     )
@@ -46,9 +49,15 @@ function ExperienceCard({title, date, company, logo, alt, background}: {title: s
                     <p>{company}</p>
                 </div>
             </div>
-            <div className={styles.logoContainer}>
+            {/* <div className={styles.logoContainer}>
                 <Image src={logo} alt={alt} fill />
-            </div>
+            </div> */}
         </div>
     )
 }
+
+{/* <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
+<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" /> */}

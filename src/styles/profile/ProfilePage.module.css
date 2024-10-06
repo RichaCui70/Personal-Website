@@ -3,13 +3,13 @@
     flex-direction: column;
     gap: 48px;
     background-color: var(--beige);
+    padding: 48px 64px 0px 64px;
     color: black;
 }
 
 .biographyContainer{
     display: flex;
     flex-direction: column;
-    padding: 0px 64px;
     gap: 8px;
 }
 
@@ -28,7 +28,6 @@
 }
 
 .experienceSection{
-    padding: 0px 64px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,8 +35,7 @@
 }
 
 .experienceContainer{
-    width: 400px;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     height: fit-content;
     position: relative;
@@ -58,6 +56,11 @@
 .titleContainer{
     display: flex;
     flex-direction: column;
+}
+
+.timelineContainer{
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 1024px){
