@@ -35,7 +35,6 @@
 }
 
 .experienceContainer {
-  display: inline-block;
   justify-content: space-between;
   height: fit-content;
   position: relative;
@@ -58,11 +57,16 @@
   flex-direction: column;
 }
 
+
+
+
 .timelineContainer {
   position: relative;
   width: 100%;
   margin: auto;
   height: 300px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .timelineLine {
@@ -75,10 +79,9 @@
 }
 
 .boxContainer {
-  width: 17%;
+  width: 150%;
   position: relative;
   min-height: 300px;
-  float: right;
 }
 
 .date {
@@ -102,25 +105,26 @@
   font-size: 8px;
 }
 
-.boxContent {
-  border-radius: 5px;
-  background-color: #00b0bd;
-  width: 90%;
+.boxTop .boxContent {
+  width: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding: 15px;
-  text-align: center;
 }
+
+.boxBottom .boxContent {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+}
+
 
 .box-content p {
   margin: 0;
   color: white;
   text-align: center;
-}
-
-.boxContainer .boxBottom {
-    top: 65%;
 }
 
 @media (min-width: 1024px) {

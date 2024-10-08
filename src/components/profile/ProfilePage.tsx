@@ -53,37 +53,94 @@ export default function ProfilePage() {
       </div>
       {/* <div className={styles.experienceSection}>
             <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-            <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
 
             </div> */}
       <div className={styles.timelineContainer}>
         <div className={styles.timelineLine}></div>
-
-        <div className={`${styles.boxContainer} ${styles.boxTop}`}>
-          <div className={styles.date}>
-            <p>DEC</p>
-          </div>
-          <div className={styles.boxContent}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod
-            </p>
-          </div>
-        </div>
-
-        <div className={`${styles.boxContainer} ${styles.boxBottom}`}>
-          <div className={styles.date}>
-            <p>DEC</p>
-          </div>
-          <div className={styles.boxContent}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod
-            </p>
-          </div>
-        </div>
+        <TimelineCard
+          title="Full-Stack Developer"
+          date="September 2024 - Present"
+          company="TAMVOES Health Inc."
+          logo="/icons/logos/Tamvoes.png"
+          alt="Tamvoes logo"
+          background="/photos/backgroundBlurb/vancouver.jpg"
+          top
+        />
+        <TimelineCard
+          title="Full-Stack Developer"
+          date="September 2024 - Present"
+          company="TAMVOES Health Inc."
+          logo="/icons/logos/Tamvoes.png"
+          alt="Tamvoes logo"
+          background="/photos/backgroundBlurb/vancouver.jpg"
+        />
+        <TimelineCard
+          title="Full-Stack Developer"
+          date="September 2024 - Present"
+          company="TAMVOES Health Inc."
+          logo="/icons/logos/Tamvoes.png"
+          alt="Tamvoes logo"
+          background="/photos/backgroundBlurb/vancouver.jpg"
+          top
+        />
+        <TimelineCard
+          title="Full-Stack Developer"
+          date="September 2024 - Present"
+          company="TAMVOES Health Inc."
+          logo="/icons/logos/Tamvoes.png"
+          alt="Tamvoes logo"
+          background="/photos/backgroundBlurb/vancouver.jpg"
+          
+        />
+        <TimelineCard
+          title="Full-Stack Developer"
+          date="September 2024 - Present"
+          company="TAMVOES Health Inc."
+          logo="/icons/logos/Tamvoes.png"
+          alt="Tamvoes logo"
+          background="/photos/backgroundBlurb/vancouver.jpg"
+          top
+        />
       </div>
     </section>
+  );
+}
+
+function TimelineCard({
+  title,
+  date,
+  company,
+  logo,
+  alt,
+  background,
+  top = false,
+}: {
+  title: string;
+  date: string;
+  company: string;
+  logo: string;
+  alt: string;
+  background: string;
+  top?: boolean;
+}) {
+  return (
+    <div
+      className={`${styles.boxContainer} ${top ? styles.boxTop : styles.boxBottom}`}
+    >
+      <div className={styles.date}>
+        <p>{date.slice(0, 3).toUpperCase()}</p>
+      </div>
+      <div className={styles.boxContent}>
+        <ExperienceCard
+          title={title}
+          date={date}
+          company={company}
+          logo={logo}
+          alt={alt}
+          background={background}
+        />
+      </div>
+    </div>
   );
 }
 
