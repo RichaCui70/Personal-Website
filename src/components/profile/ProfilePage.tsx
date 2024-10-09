@@ -57,40 +57,38 @@ export default function ProfilePage() {
             </div> */}
       <div className={styles.timelineContainer}>
         <div className={styles.timelineLine}></div>
+
         <TimelineCard
-          title="Full-Stack Developer"
-          date="September 2024 - Present"
-          company="TAMVOES Health Inc."
-          logo="/icons/logos/Tamvoes.png"
-          alt="Tamvoes logo"
-          background="/photos/backgroundBlurb/vancouver.jpg"
+          title="Line Cook"
+          date="April 2022 - January 2024"
+          company="Bingz"
+          logo="/icons/logos/Bingz.png"
+          logoWidth={48}
+          alt="Bingz logo"
           top
         />
         <TimelineCard
-          title="Full-Stack Developer"
-          date="September 2024 - Present"
-          company="TAMVOES Health Inc."
-          logo="/icons/logos/Tamvoes.png"
-          alt="Tamvoes logo"
-          background="/photos/backgroundBlurb/vancouver.jpg"
+          title="Research Assistant"
+          date="May 2024 - August 2024"
+          company="LINCS Project"
+          logo="/icons/logos/Lincs.png"
+          alt="Lincs logo"
         />
         <TimelineCard
-          title="Full-Stack Developer"
-          date="September 2024 - Present"
-          company="TAMVOES Health Inc."
-          logo="/icons/logos/Tamvoes.png"
-          alt="Tamvoes logo"
-          background="/photos/backgroundBlurb/vancouver.jpg"
+          title="Senior Resident Assistant"
+          date="August 2024 - Present"
+          company="Student Housing Services"
+          logo="/icons/logos/Housing.png"
+          logoWidth={24}
+          alt="Student Housing Services logo"
           top
         />
         <TimelineCard
-          title="Full-Stack Developer"
+          title="Teaching Assistant"
           date="September 2024 - Present"
-          company="TAMVOES Health Inc."
-          logo="/icons/logos/Tamvoes.png"
-          alt="Tamvoes logo"
-          background="/photos/backgroundBlurb/vancouver.jpg"
-          
+          company="CIS*2750 Software Systems Development and Integration"
+          logo="/icons/logos/Guelph.png"
+          alt="University of Guelph insignia logo"
         />
         <TimelineCard
           title="Full-Stack Developer"
@@ -98,7 +96,6 @@ export default function ProfilePage() {
           company="TAMVOES Health Inc."
           logo="/icons/logos/Tamvoes.png"
           alt="Tamvoes logo"
-          background="/photos/backgroundBlurb/vancouver.jpg"
           top
         />
       </div>
@@ -111,77 +108,39 @@ function TimelineCard({
   date,
   company,
   logo,
+  logoWidth,
   alt,
-  background,
   top = false,
 }: {
   title: string;
   date: string;
   company: string;
   logo: string;
+  logoWidth?: number;
   alt: string;
-  background: string;
   top?: boolean;
 }) {
   return (
     <div
       className={`${styles.boxContainer} ${top ? styles.boxTop : styles.boxBottom}`}
     >
-      <div className={styles.date}>
-        <p>{date.slice(0, 3).toUpperCase()}</p>
-      </div>
-      <div className={styles.boxContent}>
-        <ExperienceCard
-          title={title}
-          date={date}
-          company={company}
-          logo={logo}
+      <span className={styles.date} />
+      <div className={styles.experienceContainer}>
+        <div className={styles.titleContainer}>
+          <h3>{title}</h3>
+          <div style={{ fontSize: "10px" }}>
+            <p>{date}</p>
+            <p>{company}</p>
+          </div>
+        </div>
+        <Image
+          style={{ position: "absolute", right: "8px", bottom: "8px" }}
+          height={48}
+          width={logoWidth ? logoWidth : 32}
+          src={logo}
           alt={alt}
-          background={background}
         />
       </div>
     </div>
   );
-}
-
-function ExperienceCard({
-  title,
-  date,
-  company,
-  logo,
-  alt,
-  background,
-}: {
-  title: string;
-  date: string;
-  company: string;
-  logo: string;
-  alt: string;
-  background: string;
-}) {
-  return (
-    <div
-      className={styles.experienceContainer}
-      style={{ backgroundImage: `url('${background}')` }}
-    >
-      <div className={styles.titleContainer}>
-        <h3>{title}</h3>
-        <div style={{ fontSize: "12px" }}>
-          <p>{date}</p>
-          <p>{company}</p>
-        </div>
-      </div>
-      {/* <div className={styles.logoContainer}>
-                <Image src={logo} alt={alt} fill />
-            </div> */}
-    </div>
-  );
-}
-
-{
-  /* <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-<ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" /> */
 }
