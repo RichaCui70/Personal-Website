@@ -47,7 +47,10 @@
 
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
 }
 
 .projectCard:hover {
@@ -60,6 +63,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-wrap: wrap;
 }
 
 .projectSubTitle {

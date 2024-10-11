@@ -108,7 +108,7 @@
 .experienceContainer {
   justify-content: space-between;
   height: fit-content;
-  min-width: 300px;
+  width: 300px;
   position: absolute;
   border-radius: 24.5px;
   border-width: 4px;
