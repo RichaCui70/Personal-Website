@@ -56,7 +56,7 @@ function HomePageContents({
             target="_blank"
           >
             <Image
-              src="/icons/Linkedin.png"
+              src="/icons/LinkedIn.png"
               width="32"
               height="32"
               alt="LinkedIn Icon - Link to Richard Cui's LinkedIn"
