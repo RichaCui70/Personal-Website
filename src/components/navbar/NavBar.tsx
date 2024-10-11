@@ -29,12 +29,12 @@ export default function MyNavBar({ page }: { page: pageType }) {
         {page === "home" && (
           <>
             <NavbarItem>
-              <Link color="foreground" href="#">
+              <Link color="foreground" href="#profile">
                 About me
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link color="foreground" href="#">
+              <Link color="foreground" href="#projects">
                 Projects
               </Link>
             </NavbarItem>
