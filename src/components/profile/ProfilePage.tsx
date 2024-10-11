@@ -51,10 +51,6 @@ export default function ProfilePage() {
           <p>Anyways, check out what I&apos;ve been up to recently!</p>
         </div>
       </div>
-      {/* <div className={styles.experienceSection}>
-            <ExperienceCard title="Full-Stack Developer" date="September 2024 - Present" company="TAMVOES Health Inc." logo="/icons/logos/Tamvoes.png" alt="Tamvoes logo" background="/photos/backgroundBlurb/vancouver.jpg" />
-
-            </div> */}
       <div className={styles.timelineContainer}>
         <div className={styles.timelineLine}></div>
 
