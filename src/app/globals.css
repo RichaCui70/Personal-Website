@@ -26,6 +26,11 @@
   }
 }
 
+html{
+  scroll-padding-top: 10vh;
+  scroll-behavior: smooth;
+}
+
 ul{
   list-style: disc;
   list-style-position: inside;

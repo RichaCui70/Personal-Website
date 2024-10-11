@@ -15,7 +15,7 @@ export default function ProfilePage() {
   }, []);
 
   return (
-    <section className={styles.container}>
+    <section id="profile" className={styles.container}>
       <h2>About Me.</h2>
       <div className={styles.biographyContainer}>
         <div data-aos="fade-down" data-aos-delay={100} className={styles.profilePhoto}>
