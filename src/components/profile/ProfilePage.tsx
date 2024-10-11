@@ -1,13 +1,24 @@
+'use client'
+
+import { useEffect } from "react";
+
 import styles from "@/styles/profile/ProfilePage.module.css";
 import Image from "next/image";
 import { Divider } from "@nextui-org/divider";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function ProfilePage() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className={styles.container}>
       <h2>About Me.</h2>
       <div className={styles.biographyContainer}>
-        <div className={styles.profilePhoto}>
+        <div data-aos="fade-down" data-aos-delay={100} className={styles.profilePhoto}>
           <Image
             src="/pfp/richardcui.png"
             fill
@@ -122,6 +133,7 @@ function TimelineCard({
 }) {
   return (
     <div
+      data-aos="flip-left"
       className={`${styles.boxContainer} ${top ? styles.boxTop : styles.boxBottom}`}
     >
       <span className={styles.date} />
