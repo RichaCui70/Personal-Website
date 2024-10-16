@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 48px;
   background-color: var(--beige);
-  padding: 48px 64px 0px 64px;
+  padding: 48px 64px;
   color: black;
 }
 

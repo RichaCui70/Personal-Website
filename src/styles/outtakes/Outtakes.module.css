@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--orange);
+  height: unset;
+  padding: 48px 64px;
+  gap: 48px;
+}
+
+.title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
