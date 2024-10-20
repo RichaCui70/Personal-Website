@@ -13,3 +13,63 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.filmArea {
+  width: 40vw;
+}
+.filmArea .header{
+  border-radius: 5px 5px 0px 0px;
+  background-color: var(--blue);
+  padding: 8px 16px;
+}
+.filmArea .body{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  padding: 32px;
+
+  border-radius: 0px 0px 5px 5px;
+  border-right: 4px solid var(--blue);
+  border-left: 4px solid var(--blue);
+  border-bottom: 4px solid var(--blue);
+}
+.filmArea .image{
+  width: 100%;
+  padding-top: 100%;
+  
+  background-clip: padding-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.carousel{
+  display: flex;
+  gap: 64px;
+  overflow-x: scroll;
+  scroll-padding: 0px;
+  scroll-snap-type: mandatory;
+  scrollbar-color: var(--orange);
+  margin-bottom: 48px;
+}
+.carouselContainer{
+    display: flex;
+    flex-direction: column;
+    min-width: 30vw;
+}
+.carouselImage{
+    height: calc(30vw * (9/16));
+    position: relative;
+
+    border-radius: 5px 5px 0px 0px;
+    border-color: var(--blue);
+    border-width: 4px 4px 0px 4px;
+}
+.carouselCaption{
+  border-radius: 0px 0px 5px 5px;
+  background-color: var(--blue);
+  padding: 8px 16px;
+}

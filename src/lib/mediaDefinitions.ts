@@ -47,3 +47,51 @@ export const getPhotos = () => {
 
   return photos;
 };
+
+export const carouselPhotos = [
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+  },
+];
+
+export const filmPhotos = [
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  },
+  {
+    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  },
+]
