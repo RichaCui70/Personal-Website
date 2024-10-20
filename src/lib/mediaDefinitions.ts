@@ -95,3 +95,10 @@ export const filmPhotos = [
     photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
   },
 ]
+
+export const spotifyMetaData = {
+  type: "Song",
+  cover: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  title: "just stand there",
+  credits: "Fred again.., SOAK"
+}

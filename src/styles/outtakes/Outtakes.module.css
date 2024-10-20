@@ -6,7 +6,6 @@
   padding: 48px 64px;
   gap: 48px;
 }
-
 .title {
   font-size: 48px;
   font-style: normal;
@@ -14,15 +13,50 @@
   line-height: normal;
 }
 
-.filmArea {
-  width: 40vw;
+.bottomContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
-.filmArea .header{
+.bottomContent .rightContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spotifyArea{
+  width: 80vw;
+}
+.spotifyArea .body{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+
+  border-radius: 0px 0px 5px 5px;
+  border-right: 4px solid var(--blue);
+  border-left: 4px solid var(--blue);
+  border-bottom: 4px solid var(--blue);
+}
+.spotifyArea .body .cover{
+  width: calc((80vw - 96px)/2);
+  height: calc((80vw - 96px)/2);
+}
+.spotifyArea .body .metadata{
+  width: calc((80vw - 96px)/2);
+
+}
+
+
+.filmArea {
+  width: 80vw;
+}
+.header {
   border-radius: 5px 5px 0px 0px;
   background-color: var(--blue);
   padding: 8px 16px;
 }
-.filmArea .body{
+.filmArea .body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px;
@@ -33,20 +67,17 @@
   border-left: 4px solid var(--blue);
   border-bottom: 4px solid var(--blue);
 }
-.filmArea .image{
+.filmArea .image {
   width: 100%;
   padding-top: 100%;
-  
+
   background-clip: padding-box;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
-
-
-.carousel{
+.carousel {
   display: flex;
   gap: 64px;
   overflow-x: scroll;
@@ -55,21 +86,56 @@
   scrollbar-color: var(--orange);
   margin-bottom: 48px;
 }
-.carouselContainer{
-    display: flex;
-    flex-direction: column;
-    min-width: 30vw;
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
 }
-.carouselImage{
-    height: calc(30vw * (9/16));
-    position: relative;
+.carouselImage {
+  height: calc(40vw * (9 / 16));
+  position: relative;
 
-    border-radius: 5px 5px 0px 0px;
-    border-color: var(--blue);
-    border-width: 4px 4px 0px 4px;
+  border-radius: 5px 5px 0px 0px;
+  border-color: var(--blue);
+  border-width: 4px 4px 0px 4px;
 }
-.carouselCaption{
+.carouselCaption {
   border-radius: 0px 0px 5px 5px;
   background-color: var(--blue);
   padding: 8px 16px;
+}
+
+@media (min-width: 1064px) {
+  .bottomContent{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    gap: 0;
+  }
+
+  .spotifyArea{
+    width: 40vw;
+  }
+  .spotifyArea .body .cover{
+    width: calc((40vw - 96px)/2);
+    height: calc((40vw - 96px)/2);
+  }
+  .spotifyArea .body .metadata{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: calc((40vw - 96px)/2);
+  }
+
+  .filmArea {
+    width: 40vw;
+  }
+
+  .carouselContainer {
+    min-width: 30vw;
+  }
+  .carouselImage {
+    height: calc(30vw * (9 / 16));
+  }
 }
