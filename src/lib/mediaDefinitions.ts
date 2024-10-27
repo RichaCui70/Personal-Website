@@ -102,3 +102,12 @@ export const spotifyMetaData = {
   title: "just stand there",
   credits: "Fred again.., SOAK"
 }
+
+export const stravaMetaData = {
+  cover: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  distace: "",
+  time: "",
+  elevation: "",
+  title: "",
+  date: "",
+}

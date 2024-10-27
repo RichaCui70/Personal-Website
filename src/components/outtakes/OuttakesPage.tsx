@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-import { filmPhotos, carouselPhotos, spotifyMetaData } from "@/lib/mediaDefinitions";
+import {
+  filmPhotos,
+  carouselPhotos,
+  spotifyMetaData,
+  stravaMetaData,
+} from "@/lib/mediaDefinitions";
 import styles from "@/styles/outtakes/Outtakes.module.css";
 
 export default function OuttakesPage() {
@@ -38,23 +43,50 @@ export default function OuttakesPage() {
               />
               <div className={styles.metadata}>
                 <div>
-                  <p style={{fontSize: "16px"}}>{spotifyMetaData.type}</p>
-                  <p style={{fontSize: "32px"}}>{spotifyMetaData.title}</p>
-                  <p style={{fontSize: "16px"}}>{spotifyMetaData.credits}</p>
+                  <p style={{ fontSize: "16px" }}>{spotifyMetaData.type}</p>
+                  <p
+                    style={{
+                      fontSize: "32px",
+                      textOverflow: "ellipsis",
+                      width: "100%",
+                      overflow: "hidden",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {spotifyMetaData.title}
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "16px",
+                      textOverflow: "ellipsis",
+                      width: "100%",
+                      overflow: "hidden",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {spotifyMetaData.credits}
+                  </p>
                 </div>
-                <p style={{fontSize: "16px", textAlign: "end"}}>@richacui on Spotify</p>
+                <p style={{ fontSize: "16px", textAlign: "end" }}>
+                  @richacui on Spotify
+                </p>
               </div>
             </div>
           </div>
-          <div
-            style={{
-              width: "40vw",
-              height: "100px",
-              background: "red",
-              display: "inline",
-              float: "right",
-            }}
-          ></div>
+          <div className={styles.stravaActivity}>
+            <div className={styles.header}>Activity Spotlight</div>
+            <div className={styles.body}>
+              <div
+                style={{
+                  background: `url("${stravaMetaData.cover}")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+                className={styles.cover}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
