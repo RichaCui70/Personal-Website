@@ -87,14 +87,6 @@ export default function OuttakesPage() {
                 className={styles.cover}
               />
               <div className={styles.activityHeader}>
-                <Image
-                  src="/icons/Bike.svg"
-                  alt="Bike icon"
-                  height={75}
-                  width={75}
-                />
-                <div style={{ color: "white", width: "2px", height: "100%" }} />
-                {/* <Divider orientation="vertical" style={{color: "white", width: "2px", height: "100%"}}/> */}
                 <div>
                   <span>
                     <span className={styles.metrics}>
@@ -111,9 +103,9 @@ export default function OuttakesPage() {
                 <div>
                   <span>
                     <span className={styles.metrics}>
-                      {stravaMetaData.elevation}
+                      {stravaMetaData.pace}
                     </span>
-                    m
+                    \km
                   </span>
                   <p>Elevation</p>
                 </div>

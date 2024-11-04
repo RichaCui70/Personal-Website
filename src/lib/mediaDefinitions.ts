@@ -50,64 +50,65 @@ export const getPhotos = () => {
 
 export const carouselPhotos = [
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
-    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+    photo: "/photos/carousel/1.jpg",
+    caption: "May 1, 2024 - Garibaldi Lake"
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
-    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+    photo: "/photos/carousel/2.jpg",
+    caption: "August 8, 2024 - Minute Maid Park"
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
-    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+    photo: "/photos/carousel/3.jpg",
+    caption: "August 9, 2024 - NASA Johnston Space Center"
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
-    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+    photo: "/photos/carousel/4.jpg",
+    caption: "August 9, 2024 - Waffle House"
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
-    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+    photo: "/photos/carousel/5.jpg",
+    caption: "August 12, 2024 - The POST"
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
-    caption: "May 5, 2024 - Wings for Life (22km @ 5:21min/km)"
+    photo: "/photos/carousel/6.jpg",
+    caption: "August 28, 2024 - RLS Cup"
   },
 ];
 
 export const filmPhotos = [
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    photo: "/photos/vsco/1.jpg",
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    photo: "/photos/vsco/2.jpg",
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    photo: "/photos/vsco/3.jpg",
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    photo: "/photos/vsco/4.jpg",
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    photo: "/photos/vsco/5.jpg",
   },
   {
-    photo: "/photos/blogs/16-9/1-wingsforlife.jpg",
+    photo: "/photos/vsco/6.jpg",
   },
 ]
 
 export const spotifyMetaData = {
   type: "Song",
-  cover: "/photos/blogs/16-9/1-wingsforlife.jpg",
+  cover: "/photos/spotify/Ten.jpeg",
   title: "just stand there",
   credits: "Fred again.., SOAK"
 }
 
 export const stravaMetaData = {
-  cover: "/photos/blogs/16-9/1-wingsforlife.jpg",
-  distance: "100.1",
-  time: "4:06:13",
-  elevation: "985",
+  cover: "/photos/strava/CurrentStrava.jpeg",
+  distance: "25.02",
+  time: "2:33:03",
+  pace: "6:07",
   title: "Big Bike Ride",
   date: "July 11th, 2024 at 9:00am",
+  icon: "/icons/Run.svg"
 }

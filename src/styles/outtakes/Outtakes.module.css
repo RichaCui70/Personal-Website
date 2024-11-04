@@ -114,7 +114,7 @@
 .stravaActivity .body{
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 
   padding: 32px;
 
@@ -136,7 +136,7 @@
 }
 .stravaActivity .body .metrics{
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 
