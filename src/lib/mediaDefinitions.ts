@@ -47,3 +47,68 @@ export const getPhotos = () => {
 
   return photos;
 };
+
+export const carouselPhotos = [
+  {
+    photo: "/photos/carousel/1.jpg",
+    caption: "May 1, 2024 - Garibaldi Lake"
+  },
+  {
+    photo: "/photos/carousel/2.jpg",
+    caption: "August 8, 2024 - Minute Maid Park"
+  },
+  {
+    photo: "/photos/carousel/3.jpg",
+    caption: "August 9, 2024 - NASA Johnston Space Center"
+  },
+  {
+    photo: "/photos/carousel/4.jpg",
+    caption: "August 9, 2024 - Waffle House"
+  },
+  {
+    photo: "/photos/carousel/5.jpg",
+    caption: "August 12, 2024 - The POST"
+  },
+  {
+    photo: "/photos/carousel/6.jpg",
+    caption: "October 27, 2024 - Guelph"
+  },
+];
+
+export const filmPhotos = [
+  {
+    photo: "/photos/vsco/1.jpg",
+  },
+  {
+    photo: "/photos/vsco/2.jpg",
+  },
+  {
+    photo: "/photos/vsco/3.jpg",
+  },
+  {
+    photo: "/photos/vsco/4.jpg",
+  },
+  {
+    photo: "/photos/vsco/5.jpg",
+  },
+  {
+    photo: "/photos/vsco/6.jpg",
+  },
+]
+
+export const spotifyMetaData = {
+  type: "Song",
+  cover: "/photos/spotify/Ten.jpeg",
+  title: "just stand there",
+  credits: "Fred again.., SOAK"
+}
+
+export const stravaMetaData = {
+  cover: "/photos/strava/CurrentStrava.jpeg",
+  distance: "25.02",
+  time: "2:33:03",
+  pace: "6:07",
+  title: "Afternoon Run",
+  date: "September 27th, 2024 at 5:32pm",
+  icon: "/icons/Run.svg"
+}
