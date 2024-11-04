@@ -13,13 +13,13 @@ export default function OuttakesPage() {
   return (
     <section id="profile" className={styles.container}>
       <h2>Outtakes.</h2>
-      <div className={styles.carousel}>
+      <div data-aos="fade-down" className={styles.carousel}>
         {carouselPhotos.map(({ photo, caption }) => (
           <CarouselItem key={photo} photo={photo} caption={caption} />
         ))}
       </div>
       <div className={styles.bottomContent}>
-        <div className={styles.filmArea}>
+        <div data-aos="fade-down" className={styles.filmArea}>
           <div className={styles.header}>
             <p>@richacui on VSCO</p>
           </div>
@@ -29,7 +29,7 @@ export default function OuttakesPage() {
             ))}
           </div>
         </div>
-        <div className={styles.rightContent}>
+        <div data-aos="fade-down" className={styles.rightContent}>
           <div className={styles.spotifyArea}>
             <div className={styles.header}>Song on Repeat</div>
             <div className={styles.body}>

@@ -71,7 +71,7 @@ export const carouselPhotos = [
   },
   {
     photo: "/photos/carousel/6.jpg",
-    caption: "August 28, 2024 - RLS Cup"
+    caption: "October 27, 2024 - Guelph"
   },
 ];
 
@@ -108,7 +108,7 @@ export const stravaMetaData = {
   distance: "25.02",
   time: "2:33:03",
   pace: "6:07",
-  title: "Big Bike Ride",
-  date: "July 11th, 2024 at 9:00am",
+  title: "Afternoon Run",
+  date: "September 27th, 2024 at 5:32pm",
   icon: "/icons/Run.svg"
 }
