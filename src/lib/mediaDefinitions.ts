@@ -105,9 +105,9 @@ export const spotifyMetaData = {
 
 export const stravaMetaData = {
   cover: "/photos/blogs/16-9/1-wingsforlife.jpg",
-  distace: "",
-  time: "",
-  elevation: "",
-  title: "",
-  date: "",
+  distance: "100.1",
+  time: "4:06:13",
+  elevation: "985",
+  title: "Big Bike Ride",
+  date: "July 11th, 2024 at 9:00am",
 }

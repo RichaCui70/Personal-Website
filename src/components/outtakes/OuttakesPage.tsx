@@ -7,6 +7,7 @@ import {
   stravaMetaData,
 } from "@/lib/mediaDefinitions";
 import styles from "@/styles/outtakes/Outtakes.module.css";
+import { Divider } from "@nextui-org/react";
 
 export default function OuttakesPage() {
   return (
@@ -85,6 +86,43 @@ export default function OuttakesPage() {
                 }}
                 className={styles.cover}
               />
+              <div className={styles.activityHeader}>
+                <Image
+                  src="/icons/Bike.svg"
+                  alt="Bike icon"
+                  height={75}
+                  width={75}
+                />
+                <div style={{ color: "white", width: "2px", height: "100%" }} />
+                {/* <Divider orientation="vertical" style={{color: "white", width: "2px", height: "100%"}}/> */}
+                <div>
+                  <span>
+                    <span className={styles.metrics}>
+                      {stravaMetaData.distance}
+                    </span>
+                    km
+                  </span>
+                  <p>Distance</p>
+                </div>
+                <div>
+                  <span className={styles.metrics}>{stravaMetaData.time}</span>
+                  <p>Moving Time</p>
+                </div>
+                <div>
+                  <span>
+                    <span className={styles.metrics}>
+                      {stravaMetaData.elevation}
+                    </span>
+                    m
+                  </span>
+                  <p>Elevation</p>
+                </div>
+              </div>
+              <div>
+                <p className={styles.metrics}>{stravaMetaData.title}</p>
+                <span>{stravaMetaData.date}</span>
+                {/* <span>@</span> */}
+              </div>
             </div>
           </div>
         </div>

@@ -12,15 +12,14 @@
   font-weight: 600;
   line-height: normal;
 }
-
-
-.filmArea {
-  width: 80vw;
-}
 .header {
   border-radius: 5px 5px 0px 0px;
   background-color: var(--blue);
   padding: 8px 16px;
+}
+
+.filmArea {
+  width: 80vw;
 }
 .filmArea .body {
   display: grid;
@@ -80,12 +79,10 @@
 .bottomContent .rightContent{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .spotifyArea{
   width: 80vw;
-  height: 60vw;
 }
 .spotifyArea .body{
   display: flex;
@@ -111,15 +108,35 @@
 }
 
 .stravaActivity{
-  width: auto;
+  margin-top: auto;
+  width: 80vw;
 }
 .stravaActivity .body{
   display: flex;
   flex-direction: column;
+  align-items: start;
+
+  padding: 32px;
+
+  border-radius: 0px 0px 5px 5px;
+  border-right: 4px solid var(--blue);
+  border-left: 4px solid var(--blue);
+  border-bottom: 4px solid var(--blue);
 }
 .stravaActivity .body .cover{
-  height: calc((80vw - 96px)/2);
-  width: calc((80vw - 96px)/2);
+  width: 100%;
+  height: calc(80vw/2);
+}
+.stravaActivity .body .activityHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+.stravaActivity .body .metrics{
+  font-size: 32px;
+  font-weight: 700;
 }
 
 
@@ -134,7 +151,7 @@
 
   .spotifyArea{
     width: 40vw;
-    height: 30vw;
+    height: auto;
   }
   .spotifyArea .body .cover{
     width: calc((30vw - 96px)/2);
@@ -148,6 +165,13 @@
 
   .filmArea {
     width: 40vw;
+  }
+
+  .stravaActivity{
+    width: 40vw;
+  }
+  .stravaActivity .body .cover{
+    height: calc(40vw/2);
   }
 
   .carouselContainer {
