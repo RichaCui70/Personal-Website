@@ -55,9 +55,28 @@ export default function Page({ params }: { params: { id: number } }) {
       </div>
       <article className={styles.contentContainer}>
         <span className={styles.content}>
-          {content.map((paragraph) => (
-            <>{parse(paragraph)}</>
-          ))}
+          {content.map((paragraph) =>
+            paragraph[0] === "%" ? (
+              <div
+                key={paragraph}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <Image
+                  width={600}
+                  height={600}
+                  src={paragraph.split("|")[1]}
+                  alt={paragraph.split("|")[2]}
+                />
+                <div>{parse(paragraph.split("|")[2])}</div>
+              </div>
+            ) : (
+              <div key={paragraph}>{parse(paragraph)}</div>
+            ),
+          )}
         </span>
       </article>
     </>
