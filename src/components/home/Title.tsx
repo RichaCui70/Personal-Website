@@ -31,21 +31,23 @@ export default function Title({
   }, [changeFade]);
 
   useEffect(() => {
-    const typed = new Typed("#toBeTyped", {
-      strings: getTitles(),
-      typeSpeed: 50,
-      startDelay: 0,
-      backSpeed: 50,
-      backDelay: 1000,
-      preStringTyped: changePhotoWrapper,
-      onStringTyped: changeFadeType,
-      smartBackspace: false,
-      loop: true,
-    });
+    if (typeof window !== "undefined") {
+      const typed = new Typed("#toBeTyped", {
+        strings: getTitles(),
+        typeSpeed: 50,
+        startDelay: 0,
+        backSpeed: 50,
+        backDelay: 1000,
+        preStringTyped: changePhotoWrapper,
+        onStringTyped: changeFadeType,
+        smartBackspace: false,
+        loop: true,
+      });
 
-    return () => {
-      typed.destroy();
-    };
+      return () => {
+        typed.destroy();
+      };
+    }
   }, []);
 
   return (
